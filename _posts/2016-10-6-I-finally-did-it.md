@@ -1,6 +1,7 @@
 ---
 layout: post
 title: I finally did it
+excerpt:	
 ---
 
 # Udacity Front End Nanodegree Complete
@@ -15,4 +16,4 @@ Obviously, that frustration made me put myself down, and it delayed my graduatio
 
 ### Lesson 2: You are not alone, so stop being so lonely
 
-It was tough for me to not feel separated as the very nature of the nanodegree is online and therefore abstracted from human interaction. This was foolish, particularly because on any given day of the week, the entire Bay Area has a meetup or a meeting somewhere 
+It was tough for me to not feel separated as the very nature of the nanodegree is online and therefore abstracted from human interaction. This was foolish, particularly because on any given day of the week, the entire Bay Area has a meetup or a meeting somewhere.
