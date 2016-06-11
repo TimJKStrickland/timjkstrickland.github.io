@@ -4,12 +4,18 @@ title: About
 permalink: /about/
 ---
 
-##Tim JK Strickland
+# Tim JK Strickland
+
+
+
+### Developer
+Skilled in HTML5, CSS3, and JavaScript, Tim JK creates websites for clients and himself alike. An advocate of open source technologies and the impending draw of virtual reality, Tim JK is excited about several projects including yours.
 
 ### Designer
 
-A place to include any other types of information that you'd like to include about yourself.
+With years of design experience at WS&Co., Tim JK uses the Adobe Creative Suite to create visual graphics, photographs, and videos. See below for a collection of his works.
 
-### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+### Want to Work with Me?
+
+[timjk@timjkis.me](mailto:timjk@timjkis.me)
