@@ -19,17 +19,13 @@ avatar: https://avatars2.githubusercontent.com/u/6686451?v=3&s=460
 footer-links:
   dribbble:
   email: timjk@timjkis.me
-  facebook:
-  flickr:
   github: timjkstrickland
   instagram: timjkstrickland
   linkedin: timjkstrickland
-  pinterest:
-  rss: # just type anything here for a working RSS icon
   twitter: timjkstrickland
   stackoverflow: users/5781528/timjk
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus: timjkstrickland
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
