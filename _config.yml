@@ -14,7 +14,6 @@ avatar: https://pbs.twimg.com/profile_images/726843568191459328/YAoAYJ4x_400x400
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
   email: timjk@timjkis.me
   github: timjkstrickland
   instagram: timjkstrickland
@@ -22,11 +21,6 @@ footer-links:
   twitter: timjkstrickland
   stackoverflow: users/5781528/timjk
   googleplus: timjkstrickland
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus:
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-70828955-1
