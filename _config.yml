@@ -1,8 +1,4 @@
-#
-# This file contains configuration flags to customize your site
-#
-
-# Name of your site (displayed in the header)
+# Name of site (displayed in the header)
 name: Tim JK Strickland
 
 # Short bio or description (displayed in the header)
