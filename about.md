@@ -13,7 +13,7 @@ Skilled in HTML5, CSS3, and JavaScript, Tim JK creates websites for clients and 
 
 ### Designer
 
-With years of design experience at WS&Co., Tim JK uses the Adobe Creative Suite to create visual graphics, photographs, and videos. See below for a collection of his works.
+With years of design experience at WS&Co., Tim JK uses the Adobe Creative Suite to create visual graphics, photographs, and videos. He works tirelessly as a freelance photographer and videographer for fasion events around the SF Bay Area.
 
 
 ### Want to Work with Me?
