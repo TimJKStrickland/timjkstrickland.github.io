@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hackathons are Jobs
-excerpt: Knurld.io > CryptoPhoto > OpenPOWER. All by August
+excerpt: Knurld.io, then CryptoPhoto, then OpenPOWER. All by August
 ---
 
 ## New hackathon every two weeks
