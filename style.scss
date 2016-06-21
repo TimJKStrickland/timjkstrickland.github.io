@@ -122,7 +122,7 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
+  color: $orange;
   background: $lightGray;
 }
 ::selection {
@@ -273,6 +273,8 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
+  position: fixed;
+  bottom: 0;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
