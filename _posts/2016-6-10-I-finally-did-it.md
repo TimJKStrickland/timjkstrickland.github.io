@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I Finally Did It
-excerpt: 8 months later and I have a wealth of knowledge and some experience and even better, some confidence
+excerpt: 8 months later and I have a wealth of knowledge and some experience and even better, some confidence.
 ---
 
 ## Udacity Front End Nanodegree Complete
