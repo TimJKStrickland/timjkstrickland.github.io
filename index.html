@@ -2,6 +2,45 @@
 layout: default
 ---
 <div>
-  <h1>Hello, Hola</h1>
-  <h3>I like to make things</h3>
+  <h1>Developer, Designer, Photographer</h1>
+  <h2>Expertise in:</h2>
+  <ul>
+    <li>
+      HTML5
+    </li>
+    <li>
+      CSS3
+    </li>
+    <li>
+      JavaScript
+    </li>
+    <li>
+      Wordpress
+    </li>
+    <li>
+      Adobe Creative Suite
+    </li>
+  </ul>
+  <h3>With other passions in:</h3>
+  <ul>
+    <li>
+      Creative Writing. (Check out my <a href="/blog">blog</a>)
+    </li>
+    <li>
+      Virtual Reality.
+    </li>
+    <li>
+      Internet of Things.
+    </li>
+  </ul>
 </div>
+<aside class="posts side">
+   {% for post in site.posts %}
+     <article class="post">
+       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+       <div class="entry">
+         {{ post.excerpt }}
+       </div>
+     </article>
+   {% endfor %}
+</aside>
