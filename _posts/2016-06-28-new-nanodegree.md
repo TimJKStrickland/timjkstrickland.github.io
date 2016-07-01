@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New Nanodegree — Android Pioneer
+title: New Nanodegree — Android Pioneer!
 excerpt: How little sleep can I get in the shortest amount of time to build a bunch of Android apps?
 ---
 
