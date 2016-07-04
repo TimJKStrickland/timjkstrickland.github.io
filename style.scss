@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
   }
 }
+.posts { 
+  overflow: scroll;
+  height: 21.25em;
+}
 
 .svg-icon:hover {
   opacity: 75;
@@ -293,11 +297,8 @@ aside {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
   bottom: 0;
   width: inherit;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   background-color: $lightGray;
 }
 
