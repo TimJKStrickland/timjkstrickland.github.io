@@ -246,9 +246,9 @@ nav {
 }
 
 aside {
-	max-width: 20%;
+	max-width: 40%;
 	margin: 0;
-	::-webkit-scrollbar {
+	&::-webkit-scrollbar {
 		display: none;
 	}
 }
