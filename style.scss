@@ -46,9 +46,6 @@ h1, h2, h3, h4, h5, h6 {
 .posts { 
   overflow: scroll;
   height: 21.25em;
-  ::-webkit-scrollbar{
-  	display: none;
-  }
 }
 
 .svg-icon:hover {
@@ -251,6 +248,9 @@ nav {
 aside {
 	max-width: 20%;
 	margin: 0;
+	::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 
