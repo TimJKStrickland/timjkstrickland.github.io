@@ -20,13 +20,10 @@ html {
 body {
   font: 18px/1.4 $sans-serif;
   color: $darkGray;
-<<<<<<< Updated upstream
   background-color: $lightGray;
-=======
   ::-webkit-scrollbar {
   display:none;
   }
->>>>>>> Stashed changes
 }
 
 .container {
@@ -252,11 +249,8 @@ nav {
 }
 
 aside {
-<<<<<<< Updated upstream
 	max-width: 40%;
-=======
 	max-width: 30%;
->>>>>>> Stashed changes
 	margin: 0;
 	&::-webkit-scrollbar {
 		display: none;
@@ -312,6 +306,9 @@ aside {
 .wrapper-footer {
   bottom: 0;
   width: inherit;
+  position: fixed;
+  left: 20%;
+  right: 20%;
 }
 
 footer {
