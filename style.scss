@@ -309,6 +309,13 @@ aside {
   position: fixed;
   left: 20%;
   right: 20%;
+      @include mobile {
+      margin: 0;
+      width: 100%;
+      left: 0;
+      right: 0;
+      position: relative;
+    }
 }
 
 footer {
