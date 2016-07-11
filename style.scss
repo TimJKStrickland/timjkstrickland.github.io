@@ -255,6 +255,11 @@ aside {
 	&::-webkit-scrollbar {
 		display: none;
 	}
+
+   @include mobile {
+      display: none;
+    }
+
 }
 
 
@@ -271,6 +276,11 @@ aside {
 .main-text {
 	max-width: 80%;
 	margin: 0;
+   @include mobile {
+      margin: 0;
+      width: 100%;
+      position: relative;
+    }
 }
 
 .posts > .post {
