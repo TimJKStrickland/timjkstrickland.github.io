@@ -12,11 +12,11 @@ $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
 $lightGray: #efefef;
-$white: #fefefe;
+$white: #ffffff;
 
 // Font stacks
-$sans-serif: "Open Sans", Arial, sans-serif;
-$serif: Cambria, Georgia, serif;
+$sans-serif: Arial, sans-serif;
+$serif: Georgia, serif;
 
 // Mobile breakpoints
 @mixin mobile {
