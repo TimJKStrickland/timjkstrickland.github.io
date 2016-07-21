@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Hackathons are Jobs
-excerpt: Knurld.io, then CryptoPhoto, then OpenPOWER. All by August. Whew...
+excerpt: So says Google.
 ---
 
-## New hackathon every two weeks
+## So it didn't work exactly like I planned.
 
-It will make for an interesting summer
+But does anything?
