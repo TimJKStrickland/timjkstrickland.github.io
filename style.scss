@@ -17,10 +17,24 @@ html {
   font-size: 100%;
 }
 
+
+.left {
+  width: 60%;
+  height: 1000px;
+  background-image: url('/images/404.jpg')
+}
+
+.right {
+  width: 40%;
+  float: left;
+  height: 100%;
+}
+
 body {
   font: 18px/1.4 $sans-serif;
   color: $darkGray;
   background-color: $white;
+  height: 100%;
   ::-webkit-scrollbar {
   display:none;
   }
@@ -162,7 +176,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .masthead {
@@ -248,10 +262,7 @@ nav {
   }
 }
 
-aside {
-	max-width: 40%;
-	max-width: 30%;
-	margin: 0;
+aside { 
 	&::-webkit-scrollbar {
 		display: none;
 	}
@@ -316,7 +327,6 @@ aside {
 .wrapper-footer {
   bottom: 0;
   width: inherit;
-  position: fixed;
   left: 20%;
   right: 20%;
       @include mobile {
