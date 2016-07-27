@@ -19,11 +19,14 @@ html {
 
 
 .left {
-  max-width: 60%;
-  height: 100%;
+  max-width: 60vw;
+  height: 100vh;
   background-image: url('/images/IMG_4154.jpg');
   opacity: 0.5;
   float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .right {
