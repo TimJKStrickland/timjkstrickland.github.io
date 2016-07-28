@@ -21,10 +21,11 @@ html {
 .left {
   width: 60vw;
   height: 100vh;
-  background:	url('/images/IMG_4154.jpg')
-  		cover
-  		no-repeat
-  		border-box;
+  background-image: url('/images/IMG_4154.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
   opacity: 0.5;
   float: left;
   left: -60px;
