@@ -21,13 +21,17 @@ html {
 .left {
   width: 60vw;
   height: 100vh;
-  background-image: url('/images/IMG_4154.jpg');
+  background:	url('/images/IMG_4154.jpg')
+  		cover
+  		no-repeat
+  		border-box;
   opacity: 0.5;
   float: left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-clip: border-box;
+  left: -60px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
 }
 
 .right {
