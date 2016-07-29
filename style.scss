@@ -26,13 +26,26 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-clip: border-box;
-  opacity: 0.5;
+  //opacity: 0.5;
   float: left;
   left: -60px;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
+  //filter: grayscale(100%);
+  //-webkit-filter: grayscale(100%);
+  //-moz-filter: grayscale(100%);
+  //-ms-filter: grayscale(100%);
+  animation: slowGray 2s 1;
+}
+
+@keyframes slowGray {
+	from {
+		-webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+	}
+	to {
+		-webkit-filter: grayscale(100%);
+		filter: grayscale(0%);
+		opacity: 0.4;
+	}
 }
 
 .right {
