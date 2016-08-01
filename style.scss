@@ -1,6 +1,8 @@
 ---
 ---
 
+
+
 //
 // IMPORTS
 //
@@ -8,6 +10,15 @@
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
+
+
+// FONT FAMILY
+@font-face {
+	font-family: 'Affogato';
+	src: url('fonts/Affogato-Webfont/Affogato-Regular.eot');
+	src: local('Affogato Regular'), local('Affogato Regular'), url('fonts//Affogato-Webfont/Affogato-Regular.ttf') format('truetype');
+}
+  
 
 /**************/
 /* BASE RULES */
