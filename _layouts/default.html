@@ -22,12 +22,12 @@
   </head>
 
   <body>
-    <div class="left"></div>
+    <div class="left" id="leftside"></div>
     <div class="right">
       <div class="wrapper-masthead">
         <div class="container">
           <header class="masthead clearfix">
-            <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+            <!-- <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a> -->
 
             <div class="site-info">
               <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
@@ -37,7 +37,7 @@
             <nav>
               <a href="{{ site.baseurl }}/blog">Blog</a>
               <a href="{{ site.baseurl }}/about">About</a>
-              <!--<a href="{{ site.baseurl }}/timjkproductions">Photo.Video</a>-->
+              <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
             </nav>
           </header>
         </div>
@@ -56,4 +56,10 @@
 
     {% include analytics.html %}
   </body>
+  <script>
+  var left = document.getElementById('leftside');
+  document.addEventListener("DOMContentLoaded", function(event) {
+     left.classList.add('slowGray');
+  });
+  </script>
 </html>

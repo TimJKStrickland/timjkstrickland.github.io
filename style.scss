@@ -26,25 +26,30 @@
 
 html {
   font-size: 100%;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 
 .left {
   width: 58vw;
   height: 100vh;
-  background-image: url('/images/IMG_4154.jpg');
+  background-image: url('/images/IMG4154.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-clip: border-box;
-  //opacity: 0.5;
   float: left;
   left: -60px;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -o-filter: grayscale(100%);
-  animation: slowGray 2s 1;
+  
   opacity: 0.4;
+}
+
+.slowGray {
+  animation: slowGray 2s 1;
 }
 
 @keyframes slowGray {
@@ -65,7 +70,8 @@ html {
 .right {
   width: 40vw;
   float: left;
-  height: 100vh;
+  max-height: 100vh;
+  overflow: scroll
 }
 
 body {
