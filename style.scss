@@ -48,7 +48,11 @@ html {
   
   @include mobile {
       width: 100vw;
+      height: 100vh;
       opacity: 0.2;
+      position: absolute;
+      left: 0;
+      z-index: -10;
     }
 }
 
@@ -79,6 +83,7 @@ html {
   
   @include mobile {
       width: 100vw;
+      height: 100vh;
     }
 }
 
