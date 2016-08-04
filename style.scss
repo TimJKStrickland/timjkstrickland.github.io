@@ -56,6 +56,13 @@ html {
     }
 }
 
+a {
+	img{
+		max-height: 40px;
+		max-width: 40px;
+	}
+}
+
 .slowGray {
   animation: slowGray 2s 1;
 }
