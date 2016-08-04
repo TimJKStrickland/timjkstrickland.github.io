@@ -57,8 +57,10 @@ html {
 }
 
 .widget{
-	max-height: 40px;
-	max-width: 40px;
+	img{
+		max-height: 40px;
+		max-width: 40px;	
+	}
 }
 
 .slowGray {
