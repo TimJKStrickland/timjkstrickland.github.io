@@ -2,7 +2,7 @@
 name: Tim JK Strickland
 
 # Short bio or description
-description: Front end Developer, Designer, Photographer, Human 
+description: Never take broken for an answer
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 # avatar: images/favicon-16x16.png
@@ -10,11 +10,11 @@ description: Front end Developer, Designer, Photographer, Human
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  email: timjk@timjkis.me
+  email: timjkstrickland@gmail.com
   github: timjkstrickland
   linkedin: timjkstrickland
   twitter: timjkstrickland
-  stackoverflow: users/5781528/timjk
+  # stackoverflow: users/5781528/timjk
   # behance: timjkstrickland
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
