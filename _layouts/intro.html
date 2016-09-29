@@ -15,9 +15,6 @@
     },
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
-    document.addEventListener("DOMContentLoaded", function(event) { 
-      var title = document.getElementById("title");
-    title.classList.add("show");
     });
     </script>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
@@ -32,13 +29,13 @@
     <link rel="icon" href="/images/favicon-16x16.png">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <style>
-      body{
+      body {
         background-image: url("/images/background.jpg");
         background-size: cover;
         background-position: center center; 
         height: 100vh;
       }
-      
+
       .container {
         max-width: 800px;
         margin: 0 auto;
@@ -48,33 +45,37 @@
         flex-direction: column;
       }
       
-            
       .show {
         font-family:"bungee";	
         opacity: 1;
+        color: black;
         font-weight: 400;
         font-size: 2rem;
+        text-align: center;
         word-wrap: break-word;
-        color: white;
-        transform: translateY(0);
-        -ms-transform: translateY(0);
-        -webkit-transform: translateY(0);
-        transition: transform .4s ease-in-out, opacity .4s ease-in-out;
-        -webkit-transition: -webkit-transform .4s ease-in-out, opacity .4s ease-in-out;
+        animation: transform 4s ease-in-out 1;
       }
       
-      .wf-loading {
-        opacity: 0;
-        transform: translateY(-20px);
-        -ms-transform: translateY(-20px);
-        -webkit-transform: translateY(-20px);
+      @keyframes transform {
+        from {
+          opacity: 0;
+          transform: translateY(-40px);
+          -ms-transform: translateY(-40px);
+          -webkit-transform: translateY(-40px);	
+        }
+        to {
+          transform: translateY(0);
+          -ms-transform: translateY(0);
+          -webkit-transform: translateY(0);
+          transition: transform 4s ease-in-out;
+          opacity: 1;
+        }
       }
     </style>
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
   <body>
     <div class="container">
-      <div id="title">
+      <div class="show">
         <h1>TIM JK STRICKLAND</h1>
         <a href="about">Welcome</a>
       </div>
