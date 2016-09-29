@@ -45,15 +45,15 @@
         flex-direction: column;
       }
       
-      .show {
+      h1, a {
         font-family:"bungee";	
         opacity: 1;
-        color: black;
+        color: #fff;
         font-weight: 400;
-        font-size: 2rem;
+        font-size: 1.75rem;
         text-align: center;
         word-wrap: break-word;
-        animation: transform 4s ease-in-out 1;
+        animation: transform 2s ease-in-out 1;
       }
       
       @keyframes transform {
@@ -67,7 +67,6 @@
           transform: translateY(0);
           -ms-transform: translateY(0);
           -webkit-transform: translateY(0);
-          transition: transform 4s ease-in-out;
           opacity: 1;
         }
       }
@@ -75,9 +74,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="show">
-        <h1>TIM JK STRICKLAND</h1>
-        <a href="about">Welcome</a>
-      </div>
+      <h1>TIM JK STRICKLAND</h1>
+      <a href="about">Welcome</a>
     </div>
   </body>
