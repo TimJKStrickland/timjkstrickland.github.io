@@ -10,14 +10,6 @@
 @import "reset";
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
-
-
-// FONT FAMILY
-@font-face {
-	font-family: 'Affogato';
-	src: url('fonts/Affogato-Webfont/Affogato-Regular.eot');
-	src: local('Affogato Regular'), local('Affogato Regular'), url('fonts//Affogato-Webfont/Affogato-Regular.ttf') format('truetype');
-}
   
 
 /**************/
@@ -30,70 +22,11 @@ html {
   max-width: 100%;
 }
 
-
-
-
-.left {
-  width: 58vw;
-  height: 100vh;
-  background-image: url('/images/IMG4154.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-clip: border-box;
-  float: left;
-  left: -60px;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  opacity: 0.4;
-  
-  @include mobile {
-      width: 100vw;
-      height: 100vh;
-      opacity: 0.4;
-      position: absolute;
-      left: 0;
-      z-index: -10;
-    }
-}
-
 .widget{
 	img{
 		max-height: 40px;
 		max-width: 40px;	
 	}
-}
-
-.slowGray {
-  animation: slowGray 2s 1;
-}
-
-@keyframes slowGray {
-	from {
-		filter: grayscale(0%);
-		-webkit-filter: grayscale(0%);
-		-o-filter: grayscale(0%);
-		opacity: 1;
-	}
-	to {
-		-webkit-filter: grayscale(100%);
-		-o-filter: grayscale(100%);
-		filter: grayscale(100%);
-		opacity: 0.4;
-	}
-}
-
-.right {
-  width: 40vw;
-
-  max-height: 100vh;
-  overflow: scroll;
-  
-  @include mobile {
-      width: 100vw;
-      height: 100vh;
-    }
 }
 
 body {
@@ -114,7 +47,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $sans-serif;
+  font-family: $serif;
   color: $green;
   font-weight: bold;
 
@@ -160,7 +93,8 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+	margin: 15px 0;
+	font-family: $sans-serif;
 }
 
 a {
@@ -173,8 +107,9 @@ a {
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+	margin: 15px 0;
+	padding-left: 30px;
+	font-family: $sans-serif;
 }
 
 ul {
@@ -198,7 +133,7 @@ em, i {
 }
 
 strong, b {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 img {
