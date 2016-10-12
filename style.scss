@@ -90,7 +90,13 @@ h4 {
 
 p {
 	margin: 15px 0;
-	font-family: $sans-serif;
+}
+
+p,
+a,
+.post, 
+.entry {
+  font-family: $sans-serif;
 }
 
 a {
