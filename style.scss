@@ -1,8 +1,6 @@
 ---
 ---
 
-
-
 //
 // IMPORTS
 //
@@ -186,6 +184,26 @@ img {
 .wrapper-masthead {
   margin-bottom: 30px;
 
+}
+
+// /****************/
+// /* INTRO / PAGE */
+// /****************/
+
+.left, .right {
+  margin: 0;
+}
+
+.left {
+  float: left;
+  max-width: 60%;
+  text-align: left;
+}
+
+.right {
+  float: right;
+  text-align: right;
+  max-width: 25%;
 }
 
 .masthead {
