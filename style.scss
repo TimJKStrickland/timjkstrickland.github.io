@@ -30,7 +30,7 @@ html {
 body {
   color: $darkGray;
   background-color: $white;
-  height: 100%;
+  height: 100vh;
 }
 
 .container {
@@ -95,6 +95,7 @@ a,
 .post, 
 .entry {
   font-family: $sans-serif;
+  line-height: normal;
 }
 
 a {
@@ -121,19 +122,25 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul, 
+ul ol,
+ul ul,
+ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
+strong,
+b {
   font-weight: 700;
 }
 
