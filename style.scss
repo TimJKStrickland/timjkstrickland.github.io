@@ -101,7 +101,7 @@ a,
 a {
   color: $green;
   text-decoration: none;
-	font-family: $sans-serif;
+	font-family: $serif;
 	cursor: pointer;
   &:hover, &:active {
     color: $orange;
@@ -289,7 +289,7 @@ nav {
 	  float: right;
 	  font-weight: 300;
 	  letter-spacing: 1px;
-	  font-family: $sans-serif; 
+	  font-family: $serif; 
 
     @include mobile {
       margin: 0 10px;
