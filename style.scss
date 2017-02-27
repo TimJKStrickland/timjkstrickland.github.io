@@ -386,3 +386,72 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+
+
+.fp-Flex {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.phopho {
+    position: absolute;
+    top:0;
+    right:0;
+    height: 100vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+    //     z-index: 1;
+    }
+
+.portfolio-nav {
+  float: none;
+  margin: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    z-index: 100;
+    position: fixed;
+    margin: 1em 0 1em 1em;
+    li {
+        list-style-type: none;
+        padding: 0 1em;
+    }
+}
+
+.slide {
+    margin: 0 auto;
+}
+
+.left-Content {
+    margin-left: 5rem;
+}
+
+.right-Content {
+    margin: 0rem 5rem;
+}
+
+.left-Content,
+.right-Content {
+    width: 50%;
+    z-index: 2;
+}
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+    margin-top: 3em;
+    border-color: transparent transparent transparent #949494;
+}
+
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #949494;
+}
+
+.fp-controlArrow.fp-prev {
+   border-color: transparent #949494 transparent transparent; 
+}
+
