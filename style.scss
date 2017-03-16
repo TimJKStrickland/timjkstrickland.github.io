@@ -423,9 +423,11 @@ nav ul {
     }
 }
 
-.slide {
-    margin: 0 auto;
+.fp-slide {
+    display: flex;
+    align-items: center;
 }
+
 
 .left-Content {
     margin-left: 5rem;
@@ -437,7 +439,7 @@ nav ul {
 
 .left-Content,
 .right-Content {
-    width: 50%;
+    width: 40%;
     z-index: 2;
 }
 

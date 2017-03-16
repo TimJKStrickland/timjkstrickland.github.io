@@ -67,9 +67,9 @@
                     <h4>Details</h4>
                     <p>I built  a MEAN stack developed shopping area using MongoDB to store Facebook login info and AngularJS to create the template pages.</p>
                     <p>This build utitlizes the Facebook OAuth login, the API from the movie database, and a Stripe plugin for checking out movies.</p>
-                </di -->v>
+                </div>
             </div>
-            <!-- <div class="section fp-responsive fp-Flex">
+            <div class="section fp-responsive fp-Flex">
                 <div class="left-Content">
                     <h1>React-Redux API for Habitica</h1>
                     <a href="/currencyconverter"><img src="/images/cc.jpg" alt="Screenshot of currency converter"></a>
@@ -93,7 +93,7 @@
                     <p>The conceit was to keep it smarmy, so typography is playful and the palette is warm and bright.</p>
                 </div>
             </div>
-            <div class="section fp-responsive fp-Flex">
+            <div class="section fp-responsive">
                 <div class="left-Content">
                     <h1>Currency Converter</h1>
                     <a href="timjkstrickland.com/currencyconverter"><img src="/images/cc.jpg" alt="Screenshot of currency converter"></a>
@@ -104,19 +104,42 @@
                 </div>
             </div>
             <div class="section fp-responsive fp-Flex">
-            	<div class="left-Content">
-            	<h1>Daily CSS Images</h1>
-            	<h4>Day 01: Cub</h4>
-            		<p data-height="360" data-width="400" data-theme-id="0" data-slug-hash="egZBez" data-default-tab="result" data-user="TimJKStrickland" data-embed-version="2" data-pen-title="Daily CSS #001: Cub (wolf-cub)" class="codepen">See the Pen <a href="http://codepen.io/TimJKStrickland/pen/egZBez/">Daily CSS #001: Cub (wolf-cub)</a> by Tim JK Strickland (<a href="http://codepen.io/TimJKStrickland">@TimJKStrickland</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-          			<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                <div class="slide fp-flex">
+                	<div class="left-Content">
+                        	<h1>Daily CSS Images</h1>
+                        	<h3>Day 01: Cub</h3>
+                    		<p data-height="360" data-width="400" data-slug-hash="egZBez" data-user="TimJKStrickland" data-embed-version="2" data-pen-title="Daily CSS #001: Cub (wolf-cub)" class="codepen"><a href="http://codepen.io/TimJKStrickland/pen/egZBez/">Daily CSS #001: Cub (wolf-cub)</a> by Tim JK Strickland (<a href="http://codepen.io/TimJKStrickland">@TimJKStrickland</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+                  			<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         			</div>
         			<div class="right-Content">
-        				<h1>Daily SVG Images</h1>
-        				<h4>Day 01: Toad</h4>
+                        <h1>Daily CSS Images</h1>
+        				<h3>Day 02: Elephant</h3>
         				<p data-height="360" data-width="400" data-theme-id="0" data-slug-hash="BWReEV" data-default-tab="result" data-user="TimJKStrickland" data-embed-version="2" data-pen-title="Daily CSS Images 02: Elephant" class="codepen">See the Pen <a href="http://codepen.io/TimJKStrickland/pen/BWReEV/">Daily CSS Images 02: Elephant</a> by Tim JK Strickland (<a href="http://codepen.io/TimJKStrickland">@TimJKStrickland</a>) on <a href="http://codepen.io">CodePen</a>.</p>
                         <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
         			</div>
-
+                </div>
+                <div class="slide">
+                    <div class="left-Content">
+                        <h1>Daily CSS Images</h1>
+                        <h3>Day 03: Beaver</h3>
+                        <p data-height="360" data-width="300" data-theme-id="0" data-slug-hash="BWdmpx" data-default-tab="result" data-user="TimJKStrickland" data-pen-title="Daily CSS: 03 - Beaver" class="codepen">See the Pen <a href="http://codepen.io/TimJKStrickland/pen/BWdmpx/">Daily CSS: 03 - Beaver</a> by Tim JK Strickland (<a href="http://codepen.io/TimJKStrickland">@TimJKStrickland</a>) on <a href="http://codepen.io">CodePen</a>.</p><script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                    <div class="right-Content">
+                        <h1>Daily CSS Images</h1>
+                        <h3>Day 04: Tiger <em>Coming Soon</em></h3>
+                    </div>
+                    <div>
+                </div>
+                <div class="slide fp-Flex">
+                    <div class="left-Content">
+                        <h1>Daily CSS Images</h1>
+                        <h3>Day 05: Favorite Animated Animal <em>Coming Soon</em></h3>
+                    </div>
+                    <div class="right-Content">
+                        <h1>Daily CSS Images</h1>
+                        <h3>Day 06: Clock <em>Coming Soon</em></h3>
+                    </div>
+                </div>
             </div>
         </div>
         <script>
@@ -125,14 +148,17 @@
                     //Navigation
                     menu: '#header',
                     lockAnchors: false,
-                    anchors:['top', 'work', 'w2', 'projects', 'p2', 'p3', 'p4', 'dailycss'],
+                    anchors:['home', 'projects', 'about'],
                     navigation: true,
+                    slidesNavigation: true,
+                    slidesNavPosition: "bottom",
                     keyboardScrolling: true,
                     controlArrows: true,
                     verticalCentered: false,
                     sectionsColor : ['#f9f9f9', '#fff', '#f9f9f9'],
                     sectionSelector: '.section',
-                    scrollingSpeed: 750,
+                    slideSelector: '.slide',
+                    scrollingSpeed: 1000,
                     autoScrolling: true,
                     fitToSection: true,
                     scrollBar: true,
