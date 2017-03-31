@@ -1,6 +1,7 @@
 ---
 layout: post
 title: October Monthly recap
+excerpt: Aaand now what?
 ---
 
 I took September off from pretty much everything in search of a new job hunt. I realized that if I don't invest heavily in myself or my future well-being, that part of my life will stagnate and die, so it's best to keep moving in an onward direction. I did just receive some great news from a recruiter that I've been working with, so I'll be embarking on a new project with a _very_ cool company shortly. It turns out that I'm not too junior after all!
