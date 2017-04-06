@@ -22,4 +22,4 @@ Actually not uch more is going on. I'm burning the midnight+ oil to try and do m
 
 I'm still thinking about getting a car, liekly a CRV. .. But that's a non-sequitur. 
 
-### How do you create more content when your brain is so sapped dry, that there's nothing to really coagulate thoughts together?
+### How do you create more content when your brain is so sapped dry, that there's nothing to really coagulate thoughts together ?
