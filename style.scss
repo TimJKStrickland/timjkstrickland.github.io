@@ -14,33 +14,25 @@
 /* BASE RULES */
 /**************/
 
-html {
-  font-size: 100%;
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.widget{
-	img{
-		max-height: 40px;
-		max-width: 40px;	
-	}
-}
 
 body {
   color: $darkGray;
   background-color: $white;
-  height: 100vh;
 }
 
 .container {
   margin: 0 auto;
   max-width: 960px;
   padding: 0;
-  width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
   font-family: $serif;
   color: $green;
   font-weight: bold;
@@ -68,9 +60,6 @@ h1, h2, h3, h4, h5, h6, a {
 
 h1 {
   font-size: 30px;
-  a {
-    color: inherit;
-  }
 }
 
 h2 {
@@ -316,11 +305,11 @@ aside {
 //
 
 .main {
-	display: flex;
-	justify-content: space-between;
-	::-webkit-scrollbar { 
-    	display: none; 
-	}
+	// display: flex;
+	// justify-content: space-between;
+	// ::-webkit-scrollbar { 
+ //    	display: none; 
+	// }
 }
 
 .main-text {
@@ -365,15 +354,17 @@ aside {
 
 .wrapper-footer {
   bottom: 0;
+  left: 50%;
+  background: rgba(255,255,255,0.25);
+  transform: Translate(-50%);
   width: inherit;
-  left: 20%;
-  right: 20%;
+  position: fixed;
       @include mobile {
       margin: 0;
       width: 100%;
       left: 0;
       right: 0;
-      position: relative;
+      position: fixed;
     }
 }
 
