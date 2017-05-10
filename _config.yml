@@ -5,14 +5,15 @@ name: TimJK
 # description:
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-# avatar: images/favicon-16x16.png
+# avatar: images/favicon@2x.png
 
 
 # Includes an icon in the footer for each username you enter
 footer-links:
   email: timjkstrickland@gmail.com
   github: timjkstrickland
-  linkedin: timjkstricklan
+  linkedin: timjkstrickland
+  twitter: timjkstrickland
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-70828955-2

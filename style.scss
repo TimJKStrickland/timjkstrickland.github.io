@@ -353,12 +353,10 @@ aside {
 }
 
 .wrapper-footer {
-  bottom: 0;
-  left: 50%;
-  background: rgba(255,255,255,0.25);
-  transform: Translate(-50%);
-  width: inherit;
-  position: fixed;
+  background: rgba(255,255,255,0.5);
+  margin: auto;
+  display: block;
+  position: relative;
       @include mobile {
       margin: 0;
       width: 100%;
