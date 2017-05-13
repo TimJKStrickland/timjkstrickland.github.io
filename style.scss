@@ -356,7 +356,10 @@ aside {
   background: rgba(255,255,255,0.5);
   margin: auto;
   display: block;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
       @include mobile {
       margin: 0;
       width: 100%;
