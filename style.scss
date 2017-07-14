@@ -58,8 +58,10 @@ a {
   opacity: 75;
 }
 
-img {
+.entry img {
   max-width: 500px;
+  display: block;
+  margin: auto;
 }
 
 h1 {
