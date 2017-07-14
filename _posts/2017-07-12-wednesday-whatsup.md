@@ -8,7 +8,7 @@ excerpts: Rust Projects, WordPress themes, and that pesky Tic Tac Toe
 
 My friend ![Hunter Lester Benevedes](https://twitter.com/GuilfordHunter) hosted his first meetup about [Rust](https://www.rust-lang.org/), and it went really well! 
 
-![shot of Hunter via IG](https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/19955040_1274799385981784_5263995188803534848_n.jpg)
+[shot of Hunter via IG](https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/19955040_1274799385981784_5263995188803534848_n.jpg)
 
 Some of it was over my head since I've only done a few tutorials with Rust but the core concepts seemed like a good fit for his project on Raspberry Pi Zero's specs and Rust. Considering I have a [Maker's Kit from Particle](https://store.particle.io/products/particle-maker-kit) that I haven't used in a while, it was good to get back in touch with the world IoT. I found a [repo](https://github.com/zsup/firmware-rust/) of contributors that seems like a good place to start on that. Exciting stuff to come!
 
