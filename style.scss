@@ -106,8 +106,10 @@ strong, b {
   font-weight: bold;
 }
 
-img {
+.entry img {
   max-width: 500px;
+  display: block;
+  margin: auto;
 }
 
 // Fixes images in popup boxes from Google Translate
