@@ -6,7 +6,7 @@ excerpts: Rust Projects, WordPress themes, and that pesky Tic Tac Toe
 
 ## Meetup at Firefox
 
-My friend ![Hunter Lester Benevedes](https://twitter.com/GuilfordHunter) hosted his first meetup about [Rust](https://www.rust-lang.org/), and it went really well! 
+My friend [Hunter Lester Benevedes](https://twitter.com/GuilfordHunter) hosted his first meetup about [Rust](https://www.rust-lang.org/), and it went really well! 
 
 [shot of Hunter via IG](https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/19955040_1274799385981784_5263995188803534848_n.jpg)
 
