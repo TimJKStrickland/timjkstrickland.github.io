@@ -58,6 +58,10 @@ a {
   opacity: 75;
 }
 
+img {
+  max-width: 500px;
+}
+
 h1 {
   font-size: 30px;
 }
@@ -133,9 +137,6 @@ b {
   font-weight: 700;
 }
 
-img {
-  max-width: 100%;
-}
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
