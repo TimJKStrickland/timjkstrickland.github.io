@@ -6,9 +6,9 @@ excerpts: Rust Projects, WordPress themes, and that pesky Tic Tac Toe
 
 ## Meetup at Firefox
 
-My friend [Hunter Lester Benevedes](https://twitter.com/GuilfordHunter) hosted his first meetup about [Rust](https://www.rust-lang.org/), and it went really well! 
+My friend ![Hunter Lester Benevedes](https://twitter.com/GuilfordHunter) hosted his first meetup about [Rust](https://www.rust-lang.org/), and it went really well! 
 
-[shot of Hunter via IG](https://www.instagram.com/p/BWbw8ckhslo/)
+![shot of Hunter via IG](https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/19955040_1274799385981784_5263995188803534848_n.jpg)
 
 Some of it was over my head since I've only done a few tutorials with Rust but the core concepts seemed like a good fit for his project on Raspberry Pi Zero's specs and Rust. Considering I have a [Maker's Kit from Particle](https://store.particle.io/products/particle-maker-kit) that I haven't used in a while, it was good to get back in touch with the world IoT. I found a [repo](https://github.com/zsup/firmware-rust/) of contributors that seems like a good place to start on that. Exciting stuff to come!
 
@@ -16,7 +16,7 @@ Some of it was over my head since I've only done a few tutorials with Rust but t
 
 Yo he practicado mucho en [Duolingo](duolingo.com), y ahora yo quiero tener todo oro! It'll take some time, but I did it once before. This <50% fluent in Spanish is killing me because I know I'm at least 51% fluent.
 
-[My name's Jeff](http://media.riffsy.com/images/bdae5cd93f9ec469fdd2e27af1d7a5ed/tenor.gif)
+![My name's Jeff](http://media.riffsy.com/images/bdae5cd93f9ec469fdd2e27af1d7a5ed/tenor.gif)
 
 It brings up a good point about Duolingo's percentages. How arbitrary is this ruling? It's already difficult enough to measure how fluent I am in Spanish even though I use it daily to communicate via [Speaky](https://www.speaky.com) and my SO, but will I ever get to 100%? Is Duolingo even trying to get people to be at 100% fluent by their standards? And what does that even mean?
 
