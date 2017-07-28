@@ -48,10 +48,17 @@ a {
 .posts { 
   overflow: scroll;
   height: 100%;
+
+  @include mobile {
+    padding: 0 15px;
+  }
 }
 
 .page {
 	max-width: 100%;
+  @include mobile {
+    padding: 15px;
+  }
 }
 
 .svg-icon:hover {
@@ -91,6 +98,15 @@ a,
 .entry {
   font-family: $sans-serif;
   line-height: normal;
+}
+
+.post, 
+.entry {
+  font-family: $sans-serif;
+  line-height: normal;
+  @include mobile{
+    padding: 0 15px;
+  }
 }
 
 a {
@@ -194,16 +210,15 @@ b {
 }
 
 .left {
-  float: left;
-  max-width: 60%;
+  max-width: 80%;
   text-align: left;
 }
 
-.right {
-  float: right;
-  text-align: right;
-  max-width: 25%;
-}
+// .right {
+//   float: right;
+//   text-align: right;
+//   max-width: 25%;
+// }
 
 .masthead {
   padding: 20px 0;
@@ -268,9 +283,10 @@ nav {
   font-size: 18px;
 
   @include mobile {
+    display: -webkit-flex;
+    display: flex;
     float: none;
-    margin-top: 9px;
-    display: block;
+    justify-content: center;
     font-size: 16px;
   }
 
@@ -308,11 +324,9 @@ aside {
 //
 
 .main {
-	// display: flex;
-	// justify-content: space-between;
-	// ::-webkit-scrollbar { 
- //    	display: none; 
-	// }
+	@include mobile {
+    padding: 15px;
+  }
 }
 
 .main-text {
@@ -366,8 +380,6 @@ aside {
       @include mobile {
       margin: 0;
       width: 100%;
-      left: 0;
-      right: 0;
       position: fixed;
     }
 }
