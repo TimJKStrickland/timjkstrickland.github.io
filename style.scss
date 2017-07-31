@@ -206,12 +206,12 @@ b {
 // /****************/
 
 .left, .right {
-  margin: 0;
+  margin: auto;
 }
 
 .left {
-  max-width: 80%;
-  text-align: left;
+  max-width: 100%;
+  text-align: center;
 }
 
 // .right {
