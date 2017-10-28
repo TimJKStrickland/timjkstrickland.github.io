@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 24.10.17 Wednesday
+title: 25.10.17 Wednesday
 ---
 
 #### *6:24PM*
