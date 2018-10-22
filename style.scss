@@ -7,6 +7,10 @@
 
 @import "reset";
 @import "variables";
+@import "typography";
+@import "sections";
+@import "highlights";
+@import "svg-icons";
 // Syntax highlighting @import is at the bottom of this file
   
 
@@ -71,35 +75,6 @@ a {
   margin: auto;
 }
 
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-	margin: 15px 0;
-}
-
-p,
-a,
-.post, 
-.entry {
-  font-family: $sans-serif;
-  line-height: normal;
-}
-
 .post, 
 .entry {
   font-family: $sans-serif;
@@ -108,53 +83,6 @@ a,
     padding: 0 15px;
   }
 }
-
-a {
-  color: $green;
-  text-decoration: none;
-	font-family: $serif;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $orange;
-  }
-}
-
-ul, ol {
-	margin: 15px 0;
-	padding-left: 30px;
-	font-family: $sans-serif;
-}
-
-ul {
-  list-style-type: disc;
-}
-
-ol {
-  list-style-type: decimal;
-}
-
-ol ul, 
-ul ol,
-ul ul,
-ol ol {
-  margin: 0;
-}
-
-ul ul,
-ol ul {
-  list-style-type: circle;
-}
-
-em,
-i {
-  font-style: italic;
-}
-
-strong,
-b {
-  font-weight: 700;
-}
-
 
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
@@ -198,7 +126,6 @@ b {
 
 .wrapper-masthead {
   margin-bottom: 30px;
-
 }
 
 // /****************/
@@ -391,8 +318,7 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+
 
 
 
@@ -450,18 +376,3 @@ nav ul {
     width: 40%;
     z-index: 2;
 }
-
-.fp-controlArrow.fp-next,
-.fp-controlArrow.fp-prev {
-    margin-top: 3em;
-    border-color: transparent transparent transparent #949494;
-}
-
-.fp-controlArrow.fp-next {
-    border-color: transparent transparent transparent #949494;
-}
-
-.fp-controlArrow.fp-prev {
-   border-color: transparent #949494 transparent transparent; 
-}
-

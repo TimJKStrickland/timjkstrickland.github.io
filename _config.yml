@@ -50,7 +50,7 @@ kramdown:
 
 # Set the Sass partials directory, since @imports is used
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed # You might prefer to minify using :compressed
   
 # Use the following plug-ins
 plugins:
