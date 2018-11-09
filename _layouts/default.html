@@ -32,33 +32,32 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ365GM"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-      <div class="wrapper-masthead">
-        <div class="container">
+      <nav class="absolute top-0">
+        <section class="container">
           <header class="masthead clearfix">
 
             <div class="site-info">
               <a href="{{ site.baseurl }}/"><h1>TIMJKS</h1></a>
             </div>
 
-            <nav>
+            <div>
               <a href="{{ site.baseurl }}/about">About</a>
               <a href="{{ site.baseurl }}/portfolio">Code</a>
               <a href="{{ site.baseurl }}/blog">Writing</a>
-            </nav>
+            </div>
           </header>
-        </div>
-      </div>
+        </section>
+      </nav>
 
-      <div id="main" role="main" class="container main">
+      <div id="main" role="main" class="main">
         {{ content }}
       </div>
-
-      <div class="wrapper-footer">
+<!-- <div class="wrapper-footer">
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>
       </div>
-    <!-- </div> -->
+     </div> -->
 
     {% include analytics.html %}
   </body>

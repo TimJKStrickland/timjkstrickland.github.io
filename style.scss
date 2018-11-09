@@ -11,6 +11,7 @@
 @import "sections";
 @import "highlights";
 @import "svg-icons";
+@import "basscss";
 // Syntax highlighting @import is at the bottom of this file
   
 
@@ -203,36 +204,6 @@ a {
   }
 }
 
-nav {
-  float: right;
-  margin: 23px 23px 0 0; // @TODO: Vertically middle align
-  font-family: $sans-serif;
-  font-size: 18px;
-
-  @include mobile {
-    display: -webkit-flex;
-    display: flex;
-    float: none;
-    justify-content: center;
-    font-size: 16px;
-  }
-
-  a {
-	  margin: 20px 10px 0 10px;
-	  color: $green;
-	  text-align: right;
-	  float: right;
-	  font-weight: 300;
-	  letter-spacing: 1px;
-	  font-family: $serif; 
-
-    @include mobile {
-      margin: 0 10px;
-      color: $green;
-    }
-  }
-}
-
 aside { 
 	&::-webkit-scrollbar {
 		display: none;
@@ -244,135 +215,5 @@ aside {
 
 }
 
-
-
-//
-// .main
-//
-
-.main {
-	@include mobile {
-    padding: 15px;
-  }
-}
-
-.main-text {
-	max-width: 80%;
-	margin: 0;
-   @include mobile {
-      margin: 0;
-      width: 100%;
-      position: relative;
-    }
-}
-
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
-}
-
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
-}
-
-.post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
-}
-
-.wrapper-footer {
-  background: rgba(255,255,255,0.5);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-      @include mobile {
-      margin: 0;
-      width: 100%;
-      display: none;
-    }
-}
-
-footer {
-  padding: 20px 0;
-}
-
-.footer a {
-  display: flex;
-}
-
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-
-
-
-
-
-.fp-Flex {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    min-height: 100vh;
-}
-
-.phopho {
-    position: absolute;
-    top:0;
-    right:0;
-    height: 100vh;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-    //     z-index: 1;
-    }
-
-.portfolio-nav {
-  float: none;
-  margin: 0;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    z-index: 100;
-    position: fixed;
-    margin: 1em 0 1em 1em;
-    li {
-        list-style-type: none;
-        padding: 0 1em;
-    }
-}
-
-.fp-slide, .slide {
-    display: flex;
-    align-items: center;
-}
-
-
-.left-Content {
-    margin-left: 5rem;
-}
-
-.right-Content {
-    margin: 0rem 5rem;
-}
-
-.left-Content,
-.right-Content {
-    width: 40%;
-    z-index: 2;
-}
