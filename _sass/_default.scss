@@ -1,0 +1,42 @@
+// sizes
+$breakpoint-sm: '(max-width: 40em)';
+$breakpoint-md: '(min-width: 40em) and (max-width: 99.99em)';
+$breakpoint-lg: '(min-width: 100em)';
+
+body {
+  color: $darkGray;
+  background-color: $white;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 50vh;
+}
+
+.section {
+  max-width: 75vw;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $serif;
+  font-weight: 400;
+}
+h4,
+h5,
+h6,
+a {
+  font-family: $sans-serif;
+  color: $green;
+  font-weight: 600;
+
+  line-height: 1.7;
+  margin: 1em 0 15px;
+  padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}

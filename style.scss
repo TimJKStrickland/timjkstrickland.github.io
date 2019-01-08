@@ -7,6 +7,8 @@
 
 @import "reset";
 @import "variables";
+@import "default";
+@import "flexbox";
 // Syntax highlighting @import is at the bottom of this file
   
 
@@ -14,37 +16,6 @@
 /* BASE RULES */
 /**************/
 
-
-body {
-  color: $darkGray;
-  background-color: $white;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a {
-  font-family: $serif;
-  color: $green;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
 .posts { 
   overflow: scroll;
   height: 100%;
