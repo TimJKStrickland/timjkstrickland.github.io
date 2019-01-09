@@ -22,43 +22,29 @@
     <![endif]-->
 
     <link rel="stylesheet" href="/style.css" />
-    <link rel="icon" href="/images/favicon@2x.png">
+    <link rel="icon" href="assets/favicon/favicon@2x.png">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Exo:400,400i,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Marcellus|Exo:400,400i,700" rel="stylesheet">
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ365GM"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-      <div class="wrapper-masthead">
-        <div class="container">
-          <header class="masthead clearfix">
+    <header class="masthead clearfix row items-center">
+      <a href="{{ site.baseurl }}/" class="mr-auto">TIMJKS</a>
+      <nav>
+        <a href="{{ site.baseurl }}/blog">Writings</a>
+        <a href="{{ site.baseurl }}/about">About</a>
+      </nav>
+    </header>
 
-            <div class="site-info">
-              <a href="{{ site.baseurl }}/"><h1>TIMJKS</h1></a>
-            </div>
+    <section id="main" role="main" class="container section main">
+      {{ content }}
+    </section>
 
-            <nav>
-              <a href="{{ site.baseurl }}/about">About</a>
-              <a href="{{ site.baseurl }}/portfolio">Code</a>
-              <a href="{{ site.baseurl }}/blog">Writing</a>
-            </nav>
-          </header>
-        </div>
-      </div>
-
-      <div id="main" role="main" class="container main">
-        {{ content }}
-      </div>
-
-      <div class="wrapper-footer">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    <!-- </div> -->
+    <div class="wrapper-footer">
+      <footer class="footer">
+        {% include svg-icons.html %}
+      </footer>
+    </div>
 
     {% include analytics.html %}
   </body>

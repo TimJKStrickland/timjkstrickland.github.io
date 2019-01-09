@@ -9,6 +9,8 @@
 @import "variables";
 @import "default";
 @import "flexbox";
+@import "nav";
+@import "margins";
 // Syntax highlighting @import is at the bottom of this file
   
 
@@ -81,12 +83,12 @@ a,
 }
 
 a {
-  color: $green;
+  color: $lite-blue;
   text-decoration: none;
 	font-family: $serif;
 	cursor: pointer;
   &:hover, &:active {
-    color: $orange;
+    color: $green-80;
   }
 }
 
@@ -140,11 +142,11 @@ b {
 // Specify the color of the selection
 ::-moz-selection {
   color: $green;
-  background: $lightGray;
+  background: $lite-gray;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: $lite-gray;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -162,137 +164,6 @@ b {
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
-
-//
-// .masthead
-//
-
-.wrapper-masthead {
-  margin-bottom: 30px;
-
-}
-
-// /****************/
-// /* INTRO / PAGE */
-// /****************/
-
-.left, .right {
-  margin: auto;
-}
-
-.left {
-  max-width: 100%;
-  text-align: center;
-}
-
-// .right {
-//   float: right;
-//   text-align: right;
-//   max-width: 25%;
-// }
-
-.masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
-  @include mobile {
-    text-align: center;
-  }
-}
-
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $sans-serif;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-nav {
-  float: right;
-  margin: 23px 23px 0 0; // @TODO: Vertically middle align
-  font-family: $sans-serif;
-  font-size: 18px;
-
-  @include mobile {
-    display: -webkit-flex;
-    display: flex;
-    float: none;
-    justify-content: center;
-    font-size: 16px;
-  }
-
-  a {
-	  margin: 20px 10px 0 10px;
-	  color: $green;
-	  text-align: right;
-	  float: right;
-	  font-weight: 300;
-	  letter-spacing: 1px;
-	  font-family: $serif; 
-
-    @include mobile {
-      margin: 0 10px;
-      color: $green;
-    }
-  }
-}
-
-aside { 
-	&::-webkit-scrollbar {
-		display: none;
-	}
-
-   @include mobile {
-      display: none;
-    }
-
-}
-
-
-
-//
-// .main
-//
 
 .main {
 	@include mobile {
@@ -312,7 +183,7 @@ aside {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $lite-gray;
 }
 
 .posts > .post:last-child {
@@ -341,7 +212,6 @@ aside {
 }
 
 .wrapper-footer {
-  background: rgba(255,255,255,0.5);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -356,83 +226,7 @@ footer {
   padding: 20px 0;
 }
 
-.footer a {
-  display: flex;
-}
-
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
-
-
-
-
-.fp-Flex {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    min-height: 100vh;
-}
-
-.phopho {
-    position: absolute;
-    top:0;
-    right:0;
-    height: 100vh;
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-    //     z-index: 1;
-    }
-
-.portfolio-nav {
-  float: none;
-  margin: 0;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: row;
-    z-index: 100;
-    position: fixed;
-    margin: 1em 0 1em 1em;
-    li {
-        list-style-type: none;
-        padding: 0 1em;
-    }
-}
-
-.fp-slide, .slide {
-    display: flex;
-    align-items: center;
-}
-
-
-.left-Content {
-    margin-left: 5rem;
-}
-
-.right-Content {
-    margin: 0rem 5rem;
-}
-
-.left-Content,
-.right-Content {
-    width: 40%;
-    z-index: 2;
-}
-
-.fp-controlArrow.fp-next,
-.fp-controlArrow.fp-prev {
-    margin-top: 3em;
-    border-color: transparent transparent transparent #949494;
-}
-
-.fp-controlArrow.fp-next {
-    border-color: transparent transparent transparent #949494;
-}
-
-.fp-controlArrow.fp-prev {
-   border-color: transparent #949494 transparent transparent; 
-}
-
