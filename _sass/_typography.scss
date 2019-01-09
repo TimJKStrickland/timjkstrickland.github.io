@@ -1,0 +1,29 @@
+h1,
+h2,
+h3 {
+  font-family: $serif;
+  font-weight: 400;
+}
+
+h4,
+h5,
+h6,
+a {
+  font-family: $sans-serif;
+}
+a {
+  // color: $green;
+  // font-weight: 600;
+
+  // line-height: 1.7;
+  // margin: 1em 0 15px;
+  // padding: 0;
+
+  @include mobile {
+    line-height: 1.4;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}

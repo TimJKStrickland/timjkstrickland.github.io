@@ -1,6 +1,11 @@
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   z-index: 100;
   position: fixed;
   margin: 1em 0 1em 1em;
@@ -11,25 +16,25 @@ nav ul {
   }
 }
 
-header {
+.nav {
   padding: 0 2vw;
-}
-
-nav {
   font-family: $serif;
   font-size: 18px;
   padding: 0 20px;
+  width: 100vw;
 
   @include mobile {
-    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    float: none;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-size: 16px;
   }
 
-  a {
-    color: $lite-blue;
+  .nav__links {
+    color: $green;
     font-weight: 500;
     font-family: $sans-serif;
     &:hover {
@@ -40,12 +45,6 @@ nav {
       margin: 0 10px;
       color: $green;
     }
-  }
-}
-
-.masthead {
-  @include mobile {
-    text-align: center;
   }
 }
 

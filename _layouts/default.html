@@ -13,7 +13,7 @@
       if ((host == window.location.host) && (window.location.protocol != "https:"))
           window.location.protocol = "https";
     </script>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<title>{% if page.title %}{{ page.title }} – {{ site.name }} {% else %} {{ site.name }} – {{ site.description }} {% endif %}</title>
 
     {% include meta.html %}
 
@@ -22,17 +22,17 @@
     <![endif]-->
 
     <link rel="stylesheet" href="/style.css" />
-    <link rel="icon" href="assets/favicon/favicon@2x.png">
+    <link rel="icon" href="/assets/favicon/favicon@2x.png">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-<link href="https://fonts.googleapis.com/css?family=Marcellus|Exo:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus|Exo:400,700" rel="stylesheet">
   </head>
 
   <body>
-    <header class="masthead clearfix row items-center">
-      <a href="{{ site.baseurl }}/" class="mr-auto">TIMJKS</a>
-      <nav>
-        <a href="{{ site.baseurl }}/blog">Writings</a>
-        <a href="{{ site.baseurl }}/about">About</a>
+    <header class="clearfix">
+      <nav class="nav row items-center justify-end">
+        <a href="/" class="bold nav__links mr-auto">TIMJKS</a>
+        <a href="/blog" class="mr3 nav__links">Blog</a>
+        <a href="/portfolio" class="mr4 nav__links">Portfolio</a>
       </nav>
     </header>
 
