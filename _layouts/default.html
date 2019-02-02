@@ -32,8 +32,8 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ365GM"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-      <div class="wrapper-masthead">
-        <div class="container">
+      <nav class="absolute top-0">
+        <section class="container">
           <header class="masthead clearfix">
 
             <div class="site-info">
@@ -44,13 +44,12 @@
               <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
             </nav>
           </header>
-        </div>
-      </div>
+        </section>
+      </nav>
 
-      <div id="main" role="main" class="container main">
+      <div id="main" role="main" class="main">
         {{ content }}
       </div>
-
       <div class="wrapper-footer">
         <footer class="footer">
           {% include svg-icons.html %}
