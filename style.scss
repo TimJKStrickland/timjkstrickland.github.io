@@ -44,35 +44,6 @@
   margin: auto;
 }
 
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-	margin: 15px 0;
-}
-
-p,
-a,
-.post, 
-.entry {
-  font-family: $sans-serif;
-  line-height: normal;
-}
-
 .post, 
 .entry {
   font-family: $sans-serif;
@@ -136,17 +107,17 @@ b {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $darkGray;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
   color: $green;
-  background: $lite-gray;
+  background: $blue;
 }
 ::selection {
   color: $black;
-  background: $lite-gray;
+  background: $blue;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -183,7 +154,7 @@ b {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lite-gray;
+  border-bottom: 1px solid $blue;
 }
 
 .posts > .post:last-child {
@@ -194,9 +165,9 @@ b {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $darkGray;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $darkGray;
     font-size: 22px;
     font-style: italic;
   }

@@ -28,23 +28,33 @@
   </head>
 
   <body>
-    <header class="clearfix">
-      <nav class="nav row items-center justify-end">
-        <a href="/" class="bold nav__links mr-auto">TIMJKS</a>
-        <a href="/blog" class="mr3 nav__links">Blog</a>
-        <a href="/portfolio" class="mr4 nav__links">Portfolio</a>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ365GM"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+      <nav class="absolute top-0">
+        <section class="container">
+          <header class="masthead clearfix">
+
+            <div class="site-info">
+              <a href="{{ site.baseurl }}/"><h1>TIMJKS</h1></a>
+            </div>
+
+            <nav>
+              <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
+            </nav>
+          </header>
+        </section>
       </nav>
-    </header>
 
-    <section id="main" role="main" class="container section main">
-      {{ content }}
-    </section>
-
-    <div class="wrapper-footer">
-      <footer class="footer">
-        {% include svg-icons.html %}
-      </footer>
-    </div>
+      <div id="main" role="main" class="main">
+        {{ content }}
+      </div>
+      <div class="wrapper-footer">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
 
     {% include analytics.html %}
   </body>
