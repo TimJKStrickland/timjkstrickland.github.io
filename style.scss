@@ -11,16 +11,6 @@
 @import "sections";
 @import "highlights";
 @import "svg-icons";
-@import "basscss";
-@import "basscss/bassalign";
-@import "basscss/";
-@import "basscss";
-@import "basscss";
-@import "basscss";
-@import "basscss";
-@import "basscss";
-@import "basscss";
-@import "basscss";
 // Syntax highlighting @import is at the bottom of this file
   
 
@@ -222,4 +212,7 @@ aside {
       display: none;
     }
 
+}
+.nav-links {
+  list-style: none;
 }
