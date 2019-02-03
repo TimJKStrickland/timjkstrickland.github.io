@@ -34,9 +34,9 @@
     <!-- End Google Tag Manager (noscript) -->
       <nav class="absolute top-0">
         <section class="container">
-          <header class="masthead clearfix">
+        <header class="masthead clearfix row justify-between items-center">
 
-            <div class="site-info">
+            <div class="site-info mr-auto">
               <a href="{{ site.baseurl }}/"><h1>TIMJKS</h1></a>
             </div>
 
@@ -46,15 +46,16 @@
           </header>
         </section>
       </nav>
-
-      <div id="main" role="main" class="main">
-        {{ content }}
-      </div>
-      <div class="wrapper-footer">
-        <footer class="footer">
+      <section class="container">
+        <div id="main" role="main" class="main">
+          {{ content }}
+        </div>
+      </section>
+      <section class="wrapper-footer">
+        <footer class="footer column">
           {% include svg-icons.html %}
         </footer>
-      </div>
+      </section>
 
     {% include analytics.html %}
   </body>
