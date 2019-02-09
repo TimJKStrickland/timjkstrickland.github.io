@@ -21,7 +21,7 @@
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid;
 }
 
 .posts > .post:last-child {
@@ -32,9 +32,9 @@
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid $darkGray;
     padding: 0.1em 1em;
-    color: $gray;
+    color: $darkGray;
     font-size: 22px;
     font-style: italic;
   }
@@ -49,3 +49,18 @@
   }
 }
 
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 33.34%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.portfolio-section {
+  min-height: 75vh;
+}

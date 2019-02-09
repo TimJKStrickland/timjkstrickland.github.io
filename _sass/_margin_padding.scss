@@ -1,0 +1,46 @@
+$sizes: 0 0.5rem 1rem 2rem 4rem;
+@for $size from 1 through length($sizes) {
+  .mt#{$size} {
+    margin-top: nth($sizes, $size);
+  }
+  .mr#{$size} {
+    margin-right: nth($sizes, $size);
+  }
+  .mb#{$size} {
+    margin-bottom: nth($sizes, $size);
+  }
+  .ml#{$size} {
+    margin-left: nth($sizes, $size);
+  }
+  .pt#{$size} {
+    padding-top: nth($sizes, $size);
+  }
+  .pr#{$size} {
+    padding-right: nth($sizes, $size);
+  }
+  .pb#{$size} {
+    padding-bottom: nth($sizes, $size);
+  }
+  .pl#{$size} {
+    padding-left: nth($sizes, $size);
+  }
+  .p#{$size} {
+    padding: nth($sizes, $size);
+  }
+  .m#{$size} {
+    padding: nth($sizes, $size);
+  }
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+.mb-auto {
+  margin-bottom: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}

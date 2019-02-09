@@ -1,0 +1,21 @@
+// sizes
+$breakpoint-sm: '(max-width: 40em)';
+$breakpoint-md: '(min-width: 40em) and (max-width: 99.99em)';
+$breakpoint-lg: '(min-width: 100em)';
+
+body {
+  color: $darkGray;
+  background-color: $white;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 75vw;
+}
+
+.section {
+  min-height: 50vh;
+  max-width: 75vw;
+  margin: auto;
+}

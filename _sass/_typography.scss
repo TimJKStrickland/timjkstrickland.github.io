@@ -1,3 +1,41 @@
+h1,
+h2,
+.h1,
+.h2,
+h3,
+h5,
+.h3,
+.h5,
+h4,
+h6,
+.h4,
+.h6,
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+.h1,
+.h2 {
+  font-family: $serif;
+}
+h3,
+h5,
+.h3,
+.h5 {
+  font-family: $sans-serif;
+  font-weight: bold;
+}
+h4,
+.h4,
+h6,
+.h6 {
+  font-family: $sans-serif;
+  font-weight: normal;
+}
+
 h1 {
   font-size: 30px;
 }
@@ -12,7 +50,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $darkGray;
 }
 
 p {
@@ -33,7 +71,7 @@ a {
 	font-family: $serif;
 	cursor: pointer;
   &:hover, &:active {
-    color: $orange;
+    color: $lite-green;
   }
 }
 

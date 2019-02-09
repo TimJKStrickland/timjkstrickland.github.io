@@ -13,7 +13,7 @@
       if ((host == window.location.host) && (window.location.protocol != "https:"))
           window.location.protocol = "https";
     </script>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<title>{% if page.title %}{{ page.title }} – {{ site.name }} {% else %} {{ site.name }} – {{ site.description }} {% endif %}</title>
 
     {% include meta.html %}
 
@@ -22,9 +22,9 @@
     <![endif]-->
 
     <link rel="stylesheet" href="/style.css" />
-    <link rel="icon" href="/images/favicon@2x.png">
+    <link rel="icon" href="/assets/favicon/favicon@2x.png">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Exo:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus|Exo:400,700" rel="stylesheet">
   </head>
 
   <body>
@@ -34,9 +34,9 @@
     <!-- End Google Tag Manager (noscript) -->
       <nav class="absolute top-0">
         <section class="container">
-          <header class="masthead clearfix">
+        <header class="masthead clearfix row justify-between items-center">
 
-            <div class="site-info">
+            <div class="site-info mr-auto">
               <a href="{{ site.baseurl }}/"><h1>TIMJKS</h1></a>
             </div>
 
@@ -46,15 +46,16 @@
           </header>
         </section>
       </nav>
-
-      <div id="main" role="main" class="main">
-        {{ content }}
-      </div>
-      <div class="wrapper-footer">
-        <footer class="footer">
+      <section class="container">
+        <div class="main">
+          {{ content }}
+        </div>
+      </section>
+      <section class="wrapper-footer">
+        <footer class="footer column">
           {% include svg-icons.html %}
         </footer>
-      </div>
+      </section>
 
     {% include analytics.html %}
   </body>

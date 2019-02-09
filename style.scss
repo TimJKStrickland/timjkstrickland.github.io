@@ -5,22 +5,8 @@
 // IMPORTS
 //
 
-@import "reset";
 @import "variables";
-@import "typography";
-@import "sections";
-@import "highlights";
-@import "svg-icons";
-@import "basscss";
-@import "basscss/bassalign";
-@import "basscss/";
-@import "basscss";
-@import "basscss";
-@import "basscss";
-@import "basscss";
-@import "basscss";
-@import "basscss";
-@import "basscss";
+@import "default";
 // Syntax highlighting @import is at the bottom of this file
   
 
@@ -28,37 +14,6 @@
 /* BASE RULES */
 /**************/
 
-
-body {
-  color: $darkGray;
-  background-color: $white;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-a {
-  font-family: $serif;
-  color: $green;
-  font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
-}
 .posts { 
   overflow: scroll;
   height: 100%;
@@ -94,6 +49,53 @@ a {
   }
 }
 
+a {
+  color: $green;
+  text-decoration: none;
+	font-family: $serif;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $green-80;
+  }
+}
+
+ul, ol {
+	margin: 15px 0;
+	padding-left: 30px;
+	font-family: $sans-serif;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, 
+ul ol,
+ul ul,
+ol ol {
+  margin: 0;
+}
+
+ul ul,
+ol ul {
+  list-style-type: circle;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -101,17 +103,17 @@ a {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $darkGray;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
   color: $green;
-  background: $lightGray;
+  background: $blue;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: $blue;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -130,96 +132,74 @@ a {
 /* LAYOUT / SECTIONS */
 /*********************/
 
-//
-// .masthead
-//
-
-.wrapper-masthead {
-  margin-bottom: 30px;
-}
-
-// /****************/
-// /* INTRO / PAGE */
-// /****************/
-
-.left, .right {
-  margin: auto;
-}
-
-.left {
-  max-width: 100%;
-  text-align: center;
-}
-
-// .right {
-//   float: right;
-//   text-align: right;
-//   max-width: 25%;
-// }
-
-.masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
-  @include mobile {
-    text-align: center;
+.main {
+	@include mobile {
+    padding: 15px;
   }
 }
 
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
-}
-
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $sans-serif;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
-}
-
-aside { 
-	&::-webkit-scrollbar {
-		display: none;
-	}
-
+.main-text {
+	max-width: 80%;
+	margin: 0;
    @include mobile {
+      margin: 0;
+      width: 100%;
+      position: relative;
+    }
+}
+
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $blue;
+}
+
+.posts > .post:last-child {
+  padding-bottom: 1em;
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $darkGray;
+    padding: 0.1em 1em;
+    color: $darkGray;
+    font-size: 22px;
+    font-style: italic;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+.wrapper-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+      @include mobile {
+      margin: 0;
+      width: 100%;
       display: none;
     }
-
 }
+
+footer {
+  padding: 20px 0;
+}
+
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";
+@import "typography";
+@import "flexbox";
+@import "sections";
+@import "nav";
+
+@import "margin_padding";
