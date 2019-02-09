@@ -7,9 +7,6 @@
 
 @import "variables";
 @import "default";
-@import "flexbox";
-@import "nav";
-@import "margin_padding";
 // Syntax highlighting @import is at the bottom of this file
   
 
@@ -201,4 +198,8 @@ footer {
 @import "highlights";
 @import "svg-icons";
 @import "typography";
+@import "flexbox";
+@import "sections";
+@import "nav";
+
 @import "margin_padding";
