@@ -32,28 +32,14 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ365GM"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-      <nav class="absolute top-0">
-        <section class="container">
-        <header class="masthead clearfix row justify-between items-center">
-
-            <div class="site-info mr-auto">
-              <a href="{{ site.baseurl }}/"><h1>TIMJKS</h1></a>
-            </div>
-
-            <nav>
-              <a href="{{ site.baseurl }}/portfolio">Portfolio</a>
-            </nav>
-          </header>
-        </section>
-      </nav>
-      <section>
-        {{ content }}
-      </section>
-      <section class="wrapper-footer">
-        <footer class="footer column">
-          {% include svg-icons.html %}
-        </footer>
-      </section>
+    <section>
+      {{ content }}
+    </section>
+    <section class="wrapper-footer">
+      <footer class="footer column">
+        <a href="/"><i class="svg-icon back"></i></a>
+      </footer>
+    </section>
 
     {% include analytics.html %}
   </body>

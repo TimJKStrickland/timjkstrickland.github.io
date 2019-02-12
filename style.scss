@@ -132,12 +132,6 @@ b {
 /* LAYOUT / SECTIONS */
 /*********************/
 
-.main {
-	@include mobile {
-    padding: 15px;
-  }
-}
-
 .main-text {
 	max-width: 80%;
 	margin: 0;
