@@ -1,0 +1,16 @@
+.skill-progress-bar {
+  border: 1px solid blue;
+}
+
+.client-hover {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  &:hover {
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: $green-10;
+    }
+  }
+}
