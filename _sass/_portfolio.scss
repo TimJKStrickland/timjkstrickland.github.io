@@ -6,6 +6,7 @@
   position: relative;
   width: 100px;
   height: 100px;
+  box-shadow: 0 0 1px 0 $gray-10;
   &:hover {
     &:before {
       content: '';
