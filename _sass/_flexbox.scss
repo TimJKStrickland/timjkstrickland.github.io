@@ -77,3 +77,13 @@
     flex-wrap: wrap;
   }
 }
+
+@media #{$breakpoint-md}{
+  @for $i from 1 through 12 {
+    .md-col-#{$i} {
+      max-width: percentage($i / 12);
+      width: percentage($i / 12);
+      flex-basis: percentage($i / 12);
+    }
+  }
+}
