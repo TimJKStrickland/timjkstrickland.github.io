@@ -51,7 +51,7 @@ kramdown:
 # Set the Sass partials directory, since @imports is used
 sass:
   style: :compressed # You might prefer to minify using :compressed
-  
+
 # Use the following plug-ins
 plugins:
   # jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem

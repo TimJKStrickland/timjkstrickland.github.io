@@ -14,7 +14,7 @@
 /* BASE RULES */
 /**************/
 
-.posts { 
+.posts {
   overflow: scroll;
   height: 100%;
 
@@ -24,7 +24,7 @@
 }
 
 .page {
-	max-width: 100%;
+	max-width: 80%;
   @include mobile {
     padding: 15px;
   }
