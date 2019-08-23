@@ -100,3 +100,19 @@
   min-height: 300px;
   max-width: 300px;
 }
+
+.border {
+  border: 1px solid $dark-blue;
+}
+.border-top {
+  border-top: 1px solid $dark-blue;
+}
+.border-bottom {
+  border-bottom: 1px solid $dark-blue;
+}
+.border-left {
+  border-left: 1px solid $dark-blue;
+}
+.border-right {
+  border-right: 1px solid $dark-blue;
+}

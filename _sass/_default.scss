@@ -10,14 +10,15 @@ body {
   padding: 0;
 }
 
-.container {
+.container,
+.section {
   margin: 0 auto;
   padding: 0;
-  max-width: 85vw;
+  width: 85vw;
+  max-width: 40rem;
 }
 
-.portfolio-section,
-.section {
+.portfolio-section{
   // min-height: 25vh;
   max-width: 85vw;
   margin: auto;
