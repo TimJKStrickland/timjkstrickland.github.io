@@ -15,6 +15,14 @@ $sizes: 0 0.5rem 1rem 2rem 4rem;
   .pt#{$size} {
     padding-top: nth($sizes, $size);
   }
+  .px#{$size} {
+    padding-left: nth($sizes, $size);
+    padding-right: nth($sizes, $size);
+  }
+  .py#{$size} {
+    padding-top: nth($sizes, $size);
+    padding-bottom: nth($sizes, $size);
+  }
   .pr#{$size} {
     padding-right: nth($sizes, $size);
   }

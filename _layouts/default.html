@@ -32,21 +32,26 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ365GM"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-      <nav class="absolute top-0">
-        <section class="container">
-        <header class="masthead clearfix row justify-between items-center">
-            <div class="site-info">
-              <a href="{{ site.baseurl }}/">{% include header-icon.svg %}</a>
-            </div>
-          </header>
-        </section>
-      </nav>
       <section>
         {{ content }}
       </section>
       <section class="wrapper-footer">
-        <footer class="footer column">
-          {% include svg-icons.html %}
+        <footer class="column justify-center items-center">
+          <a class="border-bottom px3 row border-box" href="{{ site.baseurl }}/">{% include header-icon.svg %}</a>
+          <div class="border-column justify-center items-center">
+            <h4 class="h4 text-center">Tim JK Strickland</h4>
+            <h5 class="h5 text-center">Building buttery smooth web interfaces for all modern browsers.</h5>
+            <div class="row justify-around items-center">
+              <!-- a href="/about">About</a>
+              <a href="/portfolio"></a -->
+            </div>
+          </div>
+          <div class="column">
+            <p class="p">Get in contact</p>
+            <div>
+              {% include svg-icons.html %}
+            </div>
+          </div>
         </footer>
       </section>
   </body>

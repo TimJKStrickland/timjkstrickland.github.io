@@ -173,9 +173,9 @@ b {
 }
 
 .wrapper-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  // position: fixed;
+  // bottom: 0;
+  // left: 0;
       @include mobile {
       margin: 0;
       width: 100%;
@@ -184,7 +184,7 @@ b {
 }
 
 footer {
-  padding: 20px 0;
+  padding: 60px 0 0;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
