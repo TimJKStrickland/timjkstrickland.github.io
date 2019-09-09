@@ -1,42 +1,63 @@
-$sizes: 0 0.5rem 1rem 2rem 4rem;
-@for $size from 1 through length($sizes) {
-  .mt#{$size} {
-    margin-top: nth($sizes, $size);
+$sizes: (0, 0.5rem, 1rem ,2rem, 4rem);
+@each $size in $sizes {
+  $i: (index($sizes, $size) - 1);
+  .mt#{$i} {
+    margin-top: $size;
   }
-  .mr#{$size} {
-    margin-right: nth($sizes, $size);
+  .mr#{$i} {
+    margin-right: $size;
   }
-  .mb#{$size} {
-    margin-bottom: nth($sizes, $size);
+  .mb#{$i} {
+    margin-bottom: $size;
   }
-  .ml#{$size} {
-    margin-left: nth($sizes, $size);
+  .ml#{$i} {
+    margin-left: $size;
   }
-  .pt#{$size} {
-    padding-top: nth($sizes, $size);
+  .pt#{$i} {
+    padding-top: $size;
   }
-  .px#{$size} {
-    padding-left: nth($sizes, $size);
-    padding-right: nth($sizes, $size);
+  .px#{$i} {
+    padding-left: $size;
+    padding-right: $size;
   }
-  .py#{$size} {
-    padding-top: nth($sizes, $size);
-    padding-bottom: nth($sizes, $size);
+  .py#{$i} {
+    padding-top: $size;
+    padding-bottom: $size;
   }
-  .pr#{$size} {
-    padding-right: nth($sizes, $size);
+  .pr#{$i} {
+    padding-right: $size;
   }
-  .pb#{$size} {
-    padding-bottom: nth($sizes, $size);
+  .pb#{$i} {
+    padding-bottom: $size;
   }
-  .pl#{$size} {
-    padding-left: nth($sizes, $size);
+  .pl#{$i} {
+    padding-left: $size;
   }
-  .p#{$size} {
-    padding: nth($sizes, $size);
+  .p#{$i} {
+    padding: $size;
   }
-  .m#{$size} {
-    padding: nth($sizes, $size);
+  .m#{$i} {
+    margin: $size;
+  }
+  .mx#{$i} {
+    margin-left: $size;
+    margin-right: $size;
+  }
+  .ml#{$i} {
+    margin-left: $size;
+  }
+  .mr#{$i} {
+    margin-right: $size;
+  }
+  .mt#{$i} {
+    margin-top: $size;
+  }
+  .mb#{$i} {
+    margin-bottom: $size;
+  }
+  .my#{$i} {
+    margin-top: $size;
+    margin-bottom: $size;
   }
 }
 
@@ -54,7 +75,7 @@ $sizes: 0 0.5rem 1rem 2rem 4rem;
 }
 .my-auto {
   margin-top: auto;
-  margin-bottom-end: auto;
+  margin-bottom: auto;
 }
 .mx-auto {
   margin-right: auto;

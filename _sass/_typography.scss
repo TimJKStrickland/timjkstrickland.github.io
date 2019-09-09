@@ -110,10 +110,21 @@ strong,
 b {
   font-weight: 700;
 }
-.text-center {
+.text-center,
+.center {
   text-align: center;
+}
+.text-right,
+.right {
+  text-align: right;
 }
 
 .white {
   color: $white;
+}
+.serif {
+  font-family: $serif;
+}
+.sans-serif {
+  font-family: $sans-serif;
 }
