@@ -33,11 +33,16 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
       <section>
+        {% if page.url != "/about" %}
+          <section class="section mx-auto mt2">
+            <a class="border-bottom px3 row border-box items-center justify-between" href="{{ site.baseurl }}/">{% include header-icon.svg %}</a>
+          </section>
+        {% endif %}
         {{ content }}
       </section>
       <section class="wrapper-footer">
         <footer class="column justify-center items-center">
-          <a class="border-bottom px3 row border-box" href="{{ site.baseurl }}/">{% include header-icon.svg %}</a>
+          
           <div class="border-column justify-center items-center">
             <h4 class="h4 text-center">Tim JK Strickland</h4>
             <h5 class="h5 serif text-center m0">Building buttery smooth web interfaces for all modern browsers.</h5>

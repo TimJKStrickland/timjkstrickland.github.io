@@ -66,12 +66,12 @@ a,
 }
 
 a {
-  color: $green;
+  color: $lite-blue;
   text-decoration: none;
 	font-family: $serif;
 	cursor: pointer;
   &:hover, &:active {
-    color: $lite-green;
+    color: $green;
   }
 }
 
@@ -127,4 +127,11 @@ b {
 }
 .sans-serif {
   font-family: $sans-serif;
+}
+
+.home-link {
+  color: $blue;
+  &:hover {
+    color: $lite-blue;
+  }
 }
