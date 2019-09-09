@@ -173,18 +173,20 @@ b {
 }
 
 .wrapper-footer {
-  // position: fixed;
-  // bottom: 0;
-  // left: 0;
-      @include mobile {
-      margin: 0;
-      width: 100%;
-      display: none;
-    }
+    @include mobile {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 footer {
   padding: 60px 0 0;
+  @include mobile {
+    border-top: 1px dotted;
+    padding: 0 3vw;
+    margin: 6vw 3vw;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

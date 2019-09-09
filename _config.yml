@@ -2,7 +2,8 @@
 name: "TIM JK STRICKLAND"
 
 # Short bio or description
-description: "Web Engineer"
+greeting_1: 'Tim JK Strickland'
+greeting_2: 'Web Engineer'
 
 development_age: "6 years and a half"
 
