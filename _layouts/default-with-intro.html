@@ -33,18 +33,49 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ365GM"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-      <section>
-        <section class="section mx-auto mt2">
-          <div class="text-center">
-            <h1 class="h1 m0">{{ site.greeting_1 }}</h1>
-            <h2 class="h2 m0 mb2">{{ site.greeting_2 }}</h2>
-          </div>
-        {{ content }}
+    <section class="mx-auto white">
+      <div class="border-box pt1">
+      </div>
+      <article class="section column items-center justify-center">
+        <h1 class="primary text-center h1 mb0">Tim JK Strickland</h1>
+        <h3 class="secondary h3 subheader">Background and Work</h3>
+      </article>
+    </section>
+    <section class="mx-auto blue">
+      <div class="border-box pt3">
+        <h1 class="primary text-center h1 m0">Profile</h1>
+      </div>
+      <article class="section column items-center justify-center">
+        <h2 class="primary text-center h2 mb0">Tim JK Strickland</h2>
+        <h3 class="secondary h3 subheader">Web Developer</h3>
+        <div class="md-col-12">
+          {% assign today = site.time | date:'%s' %}
+          {% assign today_month = site.time | date:'%m' %}
+          {% assign start_date = site.developer_time | date:'%s' %}
+          {% assign second_difference = today | minus: start_date %}
+          {% assign year_difference = second_difference | divided_by: 31536000 %}
+          {% assign modulus = today_month | divided_by: 14.0 | times: 100 | floor %}
+          <h4 class="h4 m0">Tim has been working as an engineer for
+            {{ year_difference }}.{{ modulus }}
+            years</h4>
+        </div>
+      </article>
+    </section>
+    {% for section in site.sections %}
+      <section class='mx-auto {{section.background}}'>
+        <article class="section column items-center justify-center">
+          {% if section.background == 'dark-blue' or section.background == 'light-blue' %}
+          <h2 class="white text-center header h1">{{ section.title }}</h1>
+          <h3 class="white h3 subheader">{{ section.description }}</h3>
+          {% else %}
+          <h1 class="primary text-center header h1">{{ section.title }}</h1>
+          <h3 class="secondary h3 subheader">{{ section.description }}</h3>
+          {% endif %}
+        </article>
       </section>
-      <section class="wrapper-footer section">
-        <footer class="row justify-around items-center">
-              {% include svg-icons.html %}
-        </footer>
-      </section>
+    {% endfor %}
+      <footer class="row justify-around items-center">
+            {% include svg-icons.html %}
+      </footer>
   </body>
 </html>

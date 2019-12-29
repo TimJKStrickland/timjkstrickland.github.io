@@ -26,14 +26,14 @@ h5,
 .h3,
 .h5 {
   font-family: $sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 h4,
 .h4,
 h6,
 .h6 {
   font-family: $sans-serif;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 h1 {
@@ -59,7 +59,7 @@ p {
 
 p,
 a,
-.post, 
+.post,
 .entry {
   font-family: $sans-serif;
   line-height: normal;
@@ -89,7 +89,7 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul, 
+ol ul,
 ul ol,
 ul ul,
 ol ol {
@@ -146,4 +146,14 @@ b {
   h3, h4, h5, h6, p {
     font-size: 5vw;
   }
+}
+
+.primary {
+  color: $blue;
+}
+.secondary {
+  color: $lite-blue;
+}
+.tertiary {
+  color: $green;
 }
