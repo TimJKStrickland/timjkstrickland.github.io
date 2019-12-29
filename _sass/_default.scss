@@ -51,3 +51,10 @@ body {
 .blue {
   background-color: $green;
 }
+
+.profileImg {
+  min-width: 300px;
+  min-height: 300px;
+  border-radius: 50%;
+  background-color: $white
+}

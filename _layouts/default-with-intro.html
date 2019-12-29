@@ -38,7 +38,7 @@
       </div>
       <article class="section column items-center justify-center">
         <h1 class="primary text-center h1 mb0">Tim JK Strickland</h1>
-        <h3 class="secondary h3 subheader">Background and Work</h3>
+        <h3 class="primary h3 subheader">Background and Work</h3>
       </article>
     </section>
     <section class="mx-auto blue">
@@ -46,18 +46,22 @@
         <h1 class="primary text-center h1 m0">Profile</h1>
       </div>
       <article class="section column items-center justify-center">
-        <h2 class="primary text-center h2 mb0">Tim JK Strickland</h2>
-        <h3 class="secondary h3 subheader">Web Developer</h3>
-        <div class="md-col-12">
-          {% assign today = site.time | date:'%s' %}
-          {% assign today_month = site.time | date:'%m' %}
-          {% assign start_date = site.developer_time | date:'%s' %}
-          {% assign second_difference = today | minus: start_date %}
-          {% assign year_difference = second_difference | divided_by: 31536000 %}
-          {% assign modulus = today_month | divided_by: 14.0 | times: 100 | floor %}
-          <h4 class="h4 m0">Tim has been working as an engineer for
-            {{ year_difference }}.{{ modulus }}
-            years</h4>
+        <h2 class="primary bold text-center h2 mb0">Tim JK Strickland</h2>
+        <h3 class="primary h3 subheader">Web Developer</h3>
+        <div class="row">
+          <div class="md-col-6">
+            <div class="profileImg"></div>
+          </div>
+          <div class="md-col-6">
+            {% assign today = site.time | date:'%s' %}
+            {% assign today_month = site.time | date:'%m' %}
+            {% assign start_date = site.developer_time | date:'%s' %}
+            {% assign second_difference = today | minus: start_date %}
+            {% assign year_difference = second_difference | divided_by: 31536000 %}
+            {% assign modulus = today_month | divided_by: 14.0 | times: 100 | floor %}
+            <h4 class="h4 m0">I have been working as an engineer for
+              {{ year_difference }}.{{ modulus }} years in multiple capacities. </h4>
+          </div>
         </div>
       </article>
     </section>
