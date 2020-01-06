@@ -181,12 +181,7 @@ b {
 }
 
 footer {
-  padding: 60px 0 0;
-  @include mobile {
-    border-top: 1px dotted;
-    padding: 0 3vw;
-    margin: 6vw 3vw;
-  }
+  padding: 60px 0;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

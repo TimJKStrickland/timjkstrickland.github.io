@@ -6,11 +6,8 @@ greeting_1: "I'm Tim JK Strickland."
 greeting_2: "I've been building websites and web apps for the past 5 years. "
 
 sections:
-  - title: 'Header'
+  - title: 'Experiences'
     background: 'white'
-    description: 'This is my experiences section'
-  - title: 'Background'
-    background: 'dark-blue'
     description: 'This is my experiences section'
   - title: 'Abilities'
     background: 'light-blue'
@@ -18,8 +15,11 @@ sections:
   - title: 'Projects'
     background: 'blue-gray'
     description: 'This is my experiences section'
-  - title: 'Contact Us'
+  - title: 'Get in Touch'
     background: 'blue'
+    description: 'This is my experiences section'
+  - title: 'Background'
+    background: 'dark-blue'
     description: 'This is my experiences section'
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
@@ -68,9 +68,10 @@ kramdown:
 # Set the Sass partials directory, since @imports is used
 sass:
   style: :compressed # You might prefer to minify using :compressed
-
+svg:
+  optimize: true
 # Use the following plug-ins
-plugins: [jekyll-sitemap]
+plugins: [jekyll-sitemap, jekyll-inline-svg]
   # jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
 # Exclude these files from your production _site

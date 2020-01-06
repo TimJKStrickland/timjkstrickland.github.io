@@ -60,6 +60,86 @@ $sizes: (0, 0.5rem, 1rem ,2rem, 4rem);
     margin-bottom: $size;
   }
 }
+@each $size in $sizes {
+  $i: (index($sizes, $size) - 1);
+  @media screen and (max-width: 41rem) {
+    .xs-mt#{$i} {
+      margin-top: $size;
+    }
+
+    .xs-mr#{$i} {
+      margin-right: $size;
+    }
+
+    .xs-mb#{$i} {
+      margin-bottom: $size;
+    }
+
+    .xs-ml#{$i} {
+      margin-left: $size;
+    }
+
+    .xs-pt#{$i} {
+      padding-top: $size;
+    }
+
+    .xs-px#{$i} {
+      padding-left: $size;
+      padding-right: $size;
+    }
+
+    .xs-py#{$i} {
+      padding-top: $size;
+      padding-bottom: $size;
+    }
+
+    .xs-pr#{$i} {
+      padding-right: $size;
+    }
+
+    .xs-pb#{$i} {
+      padding-bottom: $size;
+    }
+
+    .xs-pl#{$i} {
+      padding-left: $size;
+    }
+
+    .xs-p#{$i} {
+      padding: $size;
+    }
+
+    .xs-m#{$i} {
+      margin: $size;
+    }
+
+    .xs-mx#{$i} {
+      margin-left: $size;
+      margin-right: $size;
+    }
+
+    .xs-ml#{$i} {
+      margin-left: $size;
+    }
+
+    .xs-mr#{$i} {
+      margin-right: $size;
+    }
+
+    .xs-mt#{$i} {
+      margin-top: $size;
+    }
+
+    .xs-mb#{$i} {
+      margin-bottom: $size;
+    }
+
+    .xs-my#{$i} {
+      margin-top: $size;
+      margin-bottom: $size;
+    }
+  }
+}
 
 .mt-auto {
   margin-top: auto;
