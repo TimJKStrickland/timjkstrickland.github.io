@@ -24,7 +24,8 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="icon" href="/assets/favicon/favicon@2x.png">
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link href="https://fonts.googleapis.com/css?family=Marcellus|Exo:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Girassol|Lato:400,400i,700,+700i&amp;display=swap"
+      rel="stylesheet">
   </head>
 
   <body>
@@ -32,34 +33,228 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ365GM"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-      <section>
-        <section class="section mx-auto mt2">
-          <div class="border-bottom row border-box items-center justify-between">
-            <a class="row align-self-end" href="{{ site.baseurl }}/">
-              {% include header-icon.svg %}
-            </a>
-            <a class="column right" href="{{ site.baseurl }}/">
-              <h1 class="h1 m0">{{ site.greeting_1 }}</h1>
-              <h2 class="h2 m0 mb2">{{ site.greeting_2 }}</h2>
-            </a>
-          </div>
-        </section>
-        {{ content }}
-      </section>
-      <section class="wrapper-footer">
-        <footer class="column justify-center items-center">
-          
-          <div class="border-column justify-center items-center">
-            <h4 class="h4 text-center">Tim JK Strickland</h4>
-            <h5 class="h5 serif text-center m0">Building buttery smooth web interfaces for all modern browsers.</h5>
-            <div class="row justify-around items-center">
-              <a href="/about" class="my2">About</a>
-            </div>
-          </div>
+    <section class="mx-auto white relative">
+      <img src="/assets/images/hero.jpg" alt="" class="hero">
+      <article class="column items-center justify-center absolute-center">
+        <h1 class="white text-center h1 mb0">Tim JK Strickland</h1>
+        <h3 class="white h3 subheader">Front-End Engineer</h3>
+      </article>
+    </section>
+    <section class="mx-auto bkg-lite-blue xs-py4">
+      <div class="border-box pt3">
+        <h1 class="white text-center h1 m0">About</h1>
+      </div>
+      <article class="section column items-center justify-center">
+        <h1 class="white h1 subheader border-bottom pb2 mb3">Who am I?</h1>
+        <div class="row">
+          <div class="md-col-3 border-box mx-auto">
             <div>
-              {% include svg-icons.html %}
+              <img src="/assets/images/1x1.jpg" width="100%" height="100%" alt="portrait photo of Tim JK Strickland" class="profileImg">
             </div>
-        </footer>
-      </section>
+          </div>
+          <div class="md-col-9 pl3 xs-pl0 border-box">
+            <h2 class="white bold h2 mb2 xs-mb1">My name is Tim JK Strickland.</h2>
+            {% assign today = site.time | date:'%s' %}
+            {% assign today_month = site.time | date:'%m' %}
+            {% assign start_date = site.developer_time | date:'%s' %}
+            {% assign second_difference = today | minus: start_date %}
+            {% assign year_difference = second_difference | divided_by: 31536000 %}
+            {% assign modulus = today_month | divided_by: 14.0 | times: 100 | floor %}
+            <h4 class="h4 white m0">I'm a Front-End Engineer. I have been working as a front-end engineer for
+              {{ year_difference }}.{{ modulus }} years. I'm well-versed in multiple front end frameworks, working professionally on web apps & sites including Shopify, Ruby on Rails, and Wordpress. I'm fascinated with how interaction can affect experience, and I'm here to make the web a better, friendlier place.</h4>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="mx-auto bkg-blue-2 xs-py4">
+      <div class="border-box pt3">
+        <h1 class="white text-center h1 m0">Experiences</h1>
+      </div>
+      <article class="column items-center justify-center p4 border-box">
+        <div class="row">
+          <div class="md-col-4 border-box mx-auto">
+            <h1 class="white h1 subheader border-bottom">Aura Frames</h1>
+            <h3 class="white copy sans-serif">March 2018&ndash;Present</h3>
+          </div>
+          <div class="md-col-8 pl3 xs-pl0 border-box">
+            <h2 class="white subheader bold h2">Front End Engineer</h2>
+            <ul>
+              <li class="white">Built a production-ready e-commerce Ruby on Rails platform which lead to 3 times sales from the previous year.</li>
+              <li class="white">Optimized site load for fast performance, maintaining an average 900 milliseconds mobile page speed.</li>
+              <li class="white">Conducted user experience testing via Google Optimize to increase conversion rates.</li>
+              <li class="white">Developed customized animations using CSS3 and GreenSock.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row wrap mx-auto justify-center items-center pt3">
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/rails.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/html5.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/sass.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/bootstrap.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            <img src="/assets/images/logos/foundation.png" width="75px" alt="">
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/js.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/jquery.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/shopify.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/adobe.svg height=75 width=75 %}
+          </div>
+        </div>
+      </article>
+      <article class="column items-center justify-center p4 border-box">
+        <div class="row">
+          <div class="md-col-4 border-box mx-auto">
+            <h1 class="white h1 subheader border-bottom">Promeets</h1>
+            <h3 class="white copy sans-serif">August 2017&ndash;March 2018</h3>
+          </div>
+          <div class="md-col-8 pl3 xs-pl0 border-box">
+            <h2 class="white subheader bold h2">Principle Web Developer</h2>
+            <ul>
+              <li class="white">Launched a production-ready web app utilizing Javascript and the ThymeLeaf framework, CSS, and HTML with a Java backend.</li>
+              <li class="white">Built a custom checkout flow utilizing Stripe and Stripe Elements.</li>
+              <li class="white">Refactored legacy code with functional javascript for a lighter page load and faster page speed.</li>
+              <li class="white">Shot and edited principal photography for marketing materials.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row wrap mx-auto justify-center items-center pt3">
+          <div class="md-col-4 row items-center justify-center my2">
+            <img src="/assets//images/logos/thymeleaf.png" height="75" width="75" alt="">
+          </div>
+          <div class="md-col-4 row items-center justify-center my2">
+            {% svg /assets/images/logos/html5.svg height=75 width=75 %}
+          </div>
+          <div class="md-col-4 row items-center justify-center my2">
+            {% svg /assets/images/logos/css3.svg width=75 %}
+          </div>
+          <div class="md-col-4 row items-center justify-center my2">
+            {% svg /assets/images/logos/bootstrap.svg height=75 width=75 %}
+          </div>
+          <div class="md-col-4 row items-center justify-center my2">
+            {% svg /assets/images/logos/js.svg height=75 width=75 %}
+          </div>
+          <div class="md-col-4 row items-center justify-center my2">
+            {% svg /assets/images/logos/jquery.svg height=75 width=75 %}
+          </div>
+          <div class="md-col-4 row items-center justify-center my2">
+            {% svg /assets/images/logos/adobe.svg height=75 width=75 %}
+          </div>
+        </div>
+      </article>
+      <article class="column items-center justify-center p4 border-box">
+        <div class="row">
+          <div class="md-col-4 border-box mx-auto">
+            <h1 class="white h1 subheader border-bottom">Vionic Shoes</h1>
+            <h3 class="white copy sans-serif">April 2017&ndash;August 2017</h3>
+          </div>
+          <div class="md-col-8 pl3 xs-pl0 border-box">
+            <h2 class="white subheader bold h2">Web Production Specialist</h2>
+            <ul>
+              <li class="white">Developed custom Wordpress child themes from Photoshop files using PHP, JavaScript, HTML, and CSS.</li>
+              <li class="white">Writing custom HTML, CSS, JavaScript and PHP for Magento CMS pages.</li>
+              <li class="white">Optimizing page performance utilizing Google Analytics and New Relic.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row wrap mx-auto justify-center items-center pt3">
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/magento.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/wordpress.svg height=75 width=75 %}
+          </div>
+          <div class="md-col-4 row justify-center items-center my2">
+            {% svg /assets/images/logos/html5.svg height=75 width=75 %}
+          </div>
+          <div class="md-col-4 row justify-center items-center my2">
+            {% svg /assets/images/logos/css3.svg height=75 width=75 %}
+          </div>
+          <div class="md-col-4 row justify-center items-center my2">
+            {% svg /assets/images/logos/bootstrap.svg height=75 width=75 %}
+          </div>
+          <div class="md-col-4 row justify-center items-center my2">
+            {% svg /assets/images/logos/php.svg height=75 width=75 %}
+          </div>
+          <div class="md-col-4 row justify-center items-center my2">
+            {% svg /assets/images/logos/mysql.svg height=75 width=75 %}
+          </div>
+          <div class="md-col-4 row justify-center items-center my2">
+            {% svg /assets/images/logos/jquery.svg height=75 width=75 %}
+          </div>
+          <div class="md-col-4 row justify-center items-center my2">
+            {% svg /assets/images/logos/adobe.svg height=75 width=75 %}
+          </div>
+        </div>
+      </article>
+      <article class="column items-center justify-center p4 border-box">
+        <div class="row">
+          <div class="md-col-4 border-box mx-auto">
+            <h1 class="white h1 subheader border-bottom">Woodruff-Sawyer</h1>
+            <h3 class="white copy sans-serif">October 2012&ndash;April 2017</h3>
+          </div>
+          <div class="md-col-8 pl3 xs-pl0 border-box">
+            <h2 class="white subheader bold h2">Marketing & Communications Coordinator</h2>
+            <ul>
+              <li class="white">Developing new HTML and CSS code for the newly redesigned Wordpress website, saving money and time by keeping edits in-house rather than sending to vendor.</li>
+              <li class="white">Creating and drafting email templates using ActOn Software, utilizing custom HTML and CSS that has generated more click-throughs and conversions.</li>
+              <li class="white">Researched usability and client experience using Google Analytics to adjust the site’s layout resulting in a lower bounce rate.</li>
+              <li class="white">Creating graphics, and leading photoshoots for imagery used in marketing materials that have led to big client wins.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row wrap mx-auto justify-center pt3">
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/wordpress.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/html5.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/bootstrap.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/php.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/jquery.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/mysql.svg height=75 width=75 %}
+          </div>
+          <div class="col-3 row justify-center items-center my2">
+            {% svg /assets/images/logos/adobe.svg height=75 width=75 %}
+          </div>
+        </div>
+      </article>
+      <article class="column items-center justify-center p4 border-box">
+        <div class="row">
+          <h1 class="white text-center h1 m0 mx-auto">Education</h1>
+          <div class="md-col-12 border-box mx-auto">
+            <h1 class="white h1 subheader border-bottom">University of Oregon</h1>
+            <h3 class="white copy sans-serif">September 2012</h3>
+            <h2 class="white subheader bold h2">B.A., English </h2>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer class="row justify-around items-center">
+        <h1 class="primary">Get in Touch</h1>
+          {% include svg-icons.html %}
+    </footer>
   </body>
 </html>

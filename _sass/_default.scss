@@ -1,6 +1,6 @@
 // sizes
 $breakpoint-sm: '(max-width: 40em)';
-$breakpoint-md: '(min-width: 40em) and (max-width: 99.99em)';
+$breakpoint-md: '(min-width: 41em) and (max-width: 99.99em)';
 $breakpoint-lg: '(min-width: 100em)';
 
 body {
@@ -16,6 +16,7 @@ body {
   padding: 0;
   width: 85vw;
   max-width: 40rem;
+  min-height: 100vh;
   &.full-width-bleed {
     max-width: 100vw;
     width: 100vw;
@@ -36,4 +37,50 @@ body {
 .border-box {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.dark-blue {
+  color: $dark-blue;
+}
+.light-blue {
+  color: $blue;
+}
+.blue-gray {
+  color: $lite-blue;
+}
+.blue {
+  color: $green;
+}
+
+.profileImg {
+  min-width: 150px;
+  max-width: 150px;
+  min-height: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  background-color: $white
+}
+
+.absolute,
+.absolute-center {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.hero {
+  width: 100vw;
+  display: block;
+}
+.absolute-center {
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.hero-content {
+  width: 100vw;
+  height: 100vh;
 }

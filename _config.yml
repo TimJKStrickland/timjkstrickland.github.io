@@ -2,14 +2,30 @@
 name: "TIM JK STRICKLAND"
 
 # Short bio or description
-greeting_1: 'Tim JK Strickland'
-greeting_2: 'Web Engineer'
+greeting_1: "I'm Tim JK Strickland."
+greeting_2: "I've been building websites and web apps for the past 5 years. "
 
-development_age: "6 years"
+sections:
+  - title: 'Experiences'
+    background: 'white'
+    description: 'This is my experiences section'
+  - title: 'Abilities'
+    background: 'light-blue'
+    description: 'This is my experiences section'
+  - title: 'Projects'
+    background: 'blue-gray'
+    description: 'This is my experiences section'
+  - title: 'Get in Touch'
+    background: 'blue'
+    description: 'This is my experiences section'
+  - title: 'Background'
+    background: 'dark-blue'
+    description: 'This is my experiences section'
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 # avatar: images/favicon@2x.png
 
+developer_time: "2014-02-14 00:00:00"
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -52,9 +68,10 @@ kramdown:
 # Set the Sass partials directory, since @imports is used
 sass:
   style: :compressed # You might prefer to minify using :compressed
-
+svg:
+  optimize: true
 # Use the following plug-ins
-plugins: [jekyll-sitemap]
+plugins: [jekyll-sitemap, jekyll-inline-svg]
   # jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
 # Exclude these files from your production _site
