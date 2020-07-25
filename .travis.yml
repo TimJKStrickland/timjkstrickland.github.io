@@ -1,6 +1,9 @@
 language: ruby
 rvm:
   - 2.6.3
-install: gem install jekyll && gem install s3_website
+  branches:
+  only:
+  - main
+install: bundle install && gem install s3_website
 script: jekyll build
 after_success: s3_website push
