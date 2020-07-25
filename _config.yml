@@ -6,22 +6,12 @@ greeting_1: "I'm Tim JK Strickland."
 greeting_2: "I've been building websites and web apps for the past 5 years. "
 
 sections:
-  - title: 'Experiences'
+  - title: 'Projects'
     background: 'white'
     description: 'This is my experiences section'
-  - title: 'Abilities'
+  - title : 'Posts'
     background: 'light-blue'
-    description: 'This is my experiences section'
-  - title: 'Projects'
-    background: 'blue-gray'
-    description: 'This is my experiences section'
-  - title: 'Get in Touch'
-    background: 'blue'
-    description: 'This is my experiences section'
-  - title: 'Background'
-    background: 'dark-blue'
-    description: 'This is my experiences section'
-
+    description: 'I infrequently write about things'
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 # avatar: images/favicon@2x.png
 
