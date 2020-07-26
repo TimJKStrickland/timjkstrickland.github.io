@@ -71,10 +71,7 @@ sass:
 svg:
   optimize: true
 # Use the following plug-ins
-plugins: 
-  - jekyll-sitemap
-  - jekyll-inline-svg
-  - jekyll-feed
+plugins: [jekyll-sitemap, jekyll-inline-svg, jekyll-feed]
 
 # Exclude these files from your production _site
 exclude:
