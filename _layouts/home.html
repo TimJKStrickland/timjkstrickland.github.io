@@ -12,7 +12,6 @@
     <link rel="canonical" href="{{}}" />
     <meta property="og:url" content="{{}}" />
     <meta property="og:site_name" content="Your awesome title" />
-    {{site.url}}
     <script type="application/ld+json">
       {
         "description":"{{site.description}}",
@@ -22,8 +21,6 @@
         "@context":"https://schema.org"
       }
     </script>
-    <!-- End Jekyll SEO tag -->
-    <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" /></head>
     <title>{% if page.title %}{{ page.title }} – {{ site.name }} {% else %} {{ site.name }} – {{ site.description }} {% endif %}</title>
 
       {% include meta.html %}
@@ -40,27 +37,17 @@
 
   <body>
     <section class="mx-auto bkg-lite-blue xs-py4">
-      <div class="border-box pt3">
-        <h1 class="white text-center h1 m0">About</h1>
-      </div>
       <article class="section column items-center justify-center">
-        <h1 class="white h1 subheader border-bottom pb2 mb3">Who am I?</h1>
         <div class="row">
           <div class="md-col-3 border-box mx-auto">
             <div>
               <img src="/assets/images/1x1.jpg" width="100%" height="100%" alt="portrait photo of Tim JK Strickland" class="profileImg">
             </div>
           </div>
-          <div class="md-col-9 pl3 xs-pl0 border-box">
-            <h2 class="white bold h2 mb2 xs-mb1">My name is Tim JK Strickland.</h2>
-            {% assign today = site.time | date:'%s' %}
-            {% assign today_month = site.time | date:'%m' %}
-            {% assign start_date = site.developer_time | date:'%s' %}
-            {% assign second_difference = today | minus: start_date %}
-            {% assign year_difference = second_difference | divided_by: 31536000 %}
-            {% assign modulus = today_month | divided_by: 14.0 | times: 100 | floor %}
-            <h4 class="h4 white m0">I'm a Front-End Engineer. I have been working as a front-end engineer for
-              {{ year_difference }}.{{ modulus }} years. I'm well-versed in multiple front end frameworks, working professionally on web apps & sites including Shopify, Ruby on Rails, and Wordpress. I'm fascinated with how interaction can affect experience, and I'm here to make the web a better, friendlier place.</h4>
+          <div class="md-col-9 pl3 xs-pl0 border-box row items-center justify-center">
+            <div class="border-box">
+              <h1 class="white header text-center h1 m0">Hi</h1>
+            </div>
           </div>
         </div>
       </article>
