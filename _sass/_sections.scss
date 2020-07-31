@@ -80,6 +80,23 @@
   min-height: 75vh;
 }
 
+@media screen and (prefers-color-scheme: dark){
+  .bkg {
+    background-color: $blue;
+  }
+  .header {
+    color: $white;
+  }
+}
+@media screen and (prefers-color-scheme: light){
+  .bkg {
+    background-color: $white;
+  }
+  .header {
+    color: $blue;
+  }
+}
+
 .bkg-blue {
   background-color: $blue;
 }
@@ -125,3 +142,11 @@
   background-color: $slateGray;
   width: 100px;
 }
+
+.max-width {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// HEIGHT

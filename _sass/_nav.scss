@@ -1,18 +1,19 @@
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  z-index: 100;
-  position: fixed;
-  margin: 1em 0 1em 1em;
+nav {
+  box-sizing: border-box;
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    z-index: 100;
 
-  li {
-    list-style-type: none;
-    padding: 0 1em;
+    li {
+      list-style-type: none;
+      padding: 0 1em;
+    }
   }
 }
 
@@ -33,7 +34,7 @@ nav ul {
     font-size: 16px;
   }
 
-  .nav__links {
+  .nav-links {
     color: $green;
     font-weight: 500;
     font-family: $sans-serif;
