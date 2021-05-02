@@ -149,4 +149,16 @@
   margin-right: auto;
 }
 
+
+// FOOTER
+
+.footer {
+  position: fixed;
+  left: 5%;
+  bottom: 30%;
+  @media screen and (max-width: 50rem){
+    bottom: 0;
+    width: 100%;
+  }
+}
 // HEIGHT
