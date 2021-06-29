@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Weekly Update"
+date:   2021-06-29
+categories: [update, stream, frontpage]
+excerpt: June is in the books. Week 26 is under way and we're halfway there
+---
+
+# Another long day to think about
+## Show your work, live out loud
+I've restarted this in an urge to try and be a proactive blogger. The thought is that if I can focus on writing more (or just at all), I should be able to at one point make some sort of content worth writing about. Additionally, even if I can't at least there's a running ledger of my progress going forward.
+
+Everyone has this problem of not showing their work as they're building. I've certainly gotten to the end of a project before and thought, if I were to try and explain this to someone, there's no way there would be coherent thought around how this is built. It requires some forethought and planning to know the thing before you build the thing. It's important because it helps you define what the thing is.

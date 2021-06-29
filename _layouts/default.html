@@ -1,68 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WZ365GM');</script>
-    <!-- End Google Tag Manager -->
-    <script type="text/javascript">
-      var host = "timjkstrickland.com";
-      if ((host == window.location.host) && (window.location.protocol != "https:"))
-          window.location.protocol = "https";
-    </script>
-<title>{% if page.title %}{{ page.title }} – {{ site.name }} {% else %} {{ site.name }} – {{ site.description }} {% endif %}</title>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="icon" href="/assets/favicon/favicon@2x.png">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link href="https://fonts.googleapis.com/css?family=Girassol|Lato:400,400i,700,+700i&amp;display=swap"
-      rel="stylesheet">
-  </head>
+  {%- include head.html -%}
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ365GM"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-      <section>
-        {% if page.url != "/about" %}
-          <section class="section mx-auto mt2">
-            <div class="border-bottom row border-box items-center justify-between">
-              <a class="row align-self-end" href="{{ site.baseurl }}/">
-                {% include header-icon.svg %}
-              </a>
-              <a class="column right" href="{{ site.baseurl }}/">
-                <h1 class="h1 m0">{{ site.greeting_1 }}</h1>
-                <h1 class="h1 m0">{{ site.greeting_2 }}</h1>
-              </a>
-            </div>
-          </section>
-        {% endif %}
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
         {{ content }}
-      </section>
-      <section class="wrapper-footer">
-        <footer class="column justify-center items-center">
-          
-          <div class="border-column justify-center items-center">
-            <h4 class="h4 text-center">Tim JK Strickland</h4>
-            <h5 class="h5 serif text-center m0">Building buttery smooth web interfaces for all modern browsers.</h5>
-            <div class="row justify-around items-center">
-              <a href="/about" class="my2">About</a>
-            </div>
-          </div>
-            <div>
-              {% include svg-icons.html %}
-            </div>
-        </footer>
-      </section>
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
   </body>
+
 </html>

@@ -11,6 +11,7 @@ h6,
 .h4,
 .h6,
 p {
+  color: $charcoal;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -64,12 +65,12 @@ a,
 }
 
 a {
-  color: $lite-blue;
+  color: $safety-orange-blaze-orange;
   text-decoration: none;
 	font-family: $serif;
 	cursor: pointer;
   &:hover, &:active {
-    color: $green;
+    color: $honey-yellow;
   }
 }
 
@@ -128,9 +129,9 @@ b {
 }
 
 .home-link {
-  color: $blue;
+  color: $safety-orange-blaze-orange;
   &:hover {
-    color: $lite-blue;
+    color: $honey-yellow;
   }
 }
 
