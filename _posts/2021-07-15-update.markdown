@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Week 28 Update"
+date:   2021-07-15
+categories: [update, stream, frontpage]
+permalink: /posts/week-28/
+excerpt: "A plan is only as good as its goal"
+---
+
+# Doing one thing once is easy
+I'm realizing how much I need to say I need to do and how much I need to do are in direct conflict with each other. It's one things to presume that I have so much to learn and another to actually accomplish those goals. I have yet again signed up for a class on software engineering that I dropped over the last few weeks like a hot potato. I intend to use this as a wake-up call to finish what I started this time. I am going to go through the OSSU curriculum, dammit. 
+
+### I still have so much to learn
+The week prior I did not do much in terms of development because there were a lot of house chores to do. I painted the walls of the entire apartment where we are going to live in a short period of time, and we installed the lighting and made a whole lot of improvements to the entire layout of the house. Last week, I had entirely forgotten about the OSSU curriculum and hadn't made any progress.
+
+### Focus is hard
+I've become _obsessed_ with Critical Role and the work they're doing for storytelling. It has stoked some long dormant fires within my mind to spread my wings creatively and expand my mind into worlds unknown to boldly search for people greater than myself. The easiest hero to make is the idol we build up in our own mind, no?
