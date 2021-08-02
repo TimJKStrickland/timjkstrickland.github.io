@@ -1,12 +1,26 @@
 /**
  * Syntax highlighting styles
  */
+
+ .highlighter-rouge {
+  @media (prefers-color-scheme: light) {
+    background-color: #f5f5fd;
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: $text-color;
+    border-top: 1px solid $bkg-white;
+    border-bottom: 1px solid $bkg-white;
+  }
+}
+
 .highlight {
   background: #fff;
   @extend %vertical-rhythm;
-
-  .highlighter-rouge & {
-    background: #eef;
+  @media (prefers-color-scheme: light) {
+    background-color: #f5f5fd;
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: $text-color;
   }
 
   .c     { color: #998; font-style: italic } // Comment

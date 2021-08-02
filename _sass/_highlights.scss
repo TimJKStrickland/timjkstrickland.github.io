@@ -1,6 +1,11 @@
 
 div.highlight {
-  background-color: #efefef;
+  @media (prefers-color-scheme: light) {
+    background-color: #efefef;
+  }
+  @media (prefers-color-scheme: dark) {
+    background-color: #828282;
+  }
   padding: 7px 7px 7px 10px;
   border: 1px solid #ddd;
   -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
