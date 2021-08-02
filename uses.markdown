@@ -6,8 +6,11 @@ permalink: /uses/
 
 ## Set up
 
-```ruby
-def method
-  puts "code code code"
-end
-```
+Keyboard: 
+Mouse:
+Personal Machine:
+Work Machine:
+Desk:
+Chair:
+Design:
+Coding Environment:
