@@ -22,11 +22,9 @@
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
 }
 
 .site-nav {
-  float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
@@ -63,7 +61,6 @@
 
     label[for="nav-trigger"] {
       display: block;
-      float: right;
       width: 36px;
       height: 36px;
       z-index: 2;
@@ -72,7 +69,6 @@
 
     .menu-icon {
       display: block;
-      float: right;
       width: 36px;
       height: 26px;
       line-height: 0;
@@ -141,17 +137,19 @@
 .social-media-list {
   list-style: none;
   margin-left: 0;
+  display: flex;
+  flex: auto;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
   color: $grey-color;
-  margin-left: -$spacing-unit / 2;
-  @extend %clearfix;
+  display: flex;
 }
 
 .footer-col {
-  float: left;
   margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
 }
@@ -186,7 +184,6 @@
 
 @include media-query($on-palm) {
   .footer-col {
-    float: none;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width:         calc(100% - (#{$spacing-unit} / 2));
   }
