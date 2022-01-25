@@ -9,3 +9,4 @@ _site
 node_modules
 npm-debug.log.482837736
 node_modules
+tmp/*
