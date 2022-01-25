@@ -6,8 +6,7 @@ _site
 .jekyll-metadata
 .bundle
 .sass-cache
-Gemfile
-Gemfile.lock
+tmp/
 node_modules
 package.json
 npm-debug.log.482837736
