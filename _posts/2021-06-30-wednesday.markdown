@@ -2,7 +2,7 @@
 layout: post
 title:  "30.6.21 Wednesday"
 date:   2021-06-30
-categories: [update, stream, frontpage]
+categories: [update, stream]
 permalink: /posts/30-june-21-wednesday/
 excerpt: S3_Website is dead. Long live s3_website
 ---
