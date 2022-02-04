@@ -2,7 +2,7 @@
 layout: post
 title:  "Week 28 Update"
 date:   2021-07-15
-categories: [update, stream]
+categories: [update, stream, frontpage]
 permalink: /posts/week-28/
 excerpt: "A plan is only as good as its goal"
 ---
