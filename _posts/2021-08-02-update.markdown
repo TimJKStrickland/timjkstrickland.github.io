@@ -2,7 +2,7 @@
 layout: post
 title:  "02.08 Update"
 date:   2021-08-02
-categories: [update, stream]
+categories: [update, stream, frontpage]
 permalink: /posts/august-2/
 excerpt: "Make it darker"
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "Week 26 Update"
 date:   2021-06-29
-categories: [update, stream, frontpage]
+categories: [update, stream, front page]
 permalink: /posts/week-26/
 excerpt: June is in the books. Week 26 is under way and we're halfway there
 ---
