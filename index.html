@@ -1,25 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tim JK Strickland</title>
-    <link rel="stylesheet" href="nonense.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim JK Strickland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link preload="true" rel="stylesheet" href="nonsense.css">
+
+  <style>
+    body {
+      font-family: 'Dela Gothic One', 'Fira Mono', 'Consolas', monospace;
+    }
+
+    main,
+    section {
+      max-width: 80vw;
+      margin: 0 auto;
+      
+    }
+
+    section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #contactMe {
+      font-size: calc(2vw + 0.5rem);
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+
+      main,
+      section {
+        max-width: 100vw;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: calc(4vw + 1rem);
+      }
+
+      h2 {
+        font-size: calc(3vw + 1rem);
+      }
+
+      section {
+        height: 100vh;
+        position: relative;
+      }
+
+      #contactMe {
+        font-size: calc(3vw + 1rem);
+        text-decoration: none;
+        color: #000;
+        transition: color 0.3s ease;
+        margin: 0 auto;
+        position: initial;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <main>
-        <h1>Tim JK Strickland</h1>
-        <h2>Solving jank one pixel at a time</h2>
-        <section>
-            <h2>Projects</h2>
-        </section>
-        <section>
-            <h2>History</h2>
-        </section>
-        <section>
-            <h2>Contact</h2>
-            <p><a href="mailto:timjkstrickland@gmail.com">Say Hello</a></p>
-        </section>
-    </main>
+  <main>
+    <section>
+      <h1>Tim JK Strickland</h1>
+      <h2>Solving jank one pixel at a time</h2>
+      <p>I'm a web developer and designer with a passion for creating engaging and interactive experiences. Here, you'll
+        find a collection of my work, projects, and a bit about my journey in the world of web development.</p>
+    </section>
+    <section>
+      <h3>Projects</h3>
+      <p>CodePen work</p>
+      <p>CodePen work</p>
+      <p>CodePen work</p>
+      <p>CodePen work</p>
+    </section>
+    <section>
+      <h3>History</h3>
+    </section>
+    <section>
+      <h3 id="contactMe"><a href="mailto:timjkstrickland@gmail.com">Say Hello</a></h3>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/EaselPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/GSDevTools.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/InertiaPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathHelper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Observer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Physics2DPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/PhysicsPropsPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/PixiPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  ScrollSmoother requires ScrollTrigger
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+
+  RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/EasePack.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js"></script>
+  CustomBounce requires CustomEase
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomBounce.min.js"></script>
+  CustomWiggle requires CustomEase
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomWiggle.min.js"></script> -->
+  <script>
+    window.addEventListener("load", () => {
+      // Register custom eases
+      // Initialize GSAP ScrollSmoother
+      // gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+      // Initial animation for main content
+      gsap.from("section", {
+        duration: 1,
+        opacity: 0,
+        y: 40,
+        ease: "power2.out"
+      });
+      // GSDevTools for debugging
+      // if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+      //         gsap.registerPlugin(GSDevTools);
+      //         GSDevTools.create({
+      //                 animation: gsap.getTweensOf("main"),
+      //                 container: document.body,
+      //                 toggleClass: "devtools-active",
+      //                 open: true,
+      //                 position: "top-right",
+      //                 theme: "dark",
+      //                 css: true,
+      //                 customLabel: "GSAP DevTools"
+      //             });
+      //         }
+      // // Custom wiggle effect on sections
+      gsap.utils.toArray("section p a").forEach((section) => {
+        gsap.from(section, {
+          duration: 10,
+          ease: "customWiggle",
+          rotation: 1,
+          opacity: 1,
+          scrollTrigger: {
+            trigger: section,
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+            markers: false,
+            once: true
+          }
+        });
+      });
+    });
+  </script>
 </body>
+
 </html>
