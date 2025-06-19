@@ -1,164 +1,188 @@
 body {
-    font-family: 'Fira Mono', 'Consolas', monospace;
+  font-family: 'Fira Mono', 'Consolas', monospace;
 }
+
 @media (prefers-color-scheme: light) {
-    :root {
-        --wm-bg: #f5f7fa;
-        --wm-bg-alt: #e9ecef;
-        --wm-fg: #232526;
-        --wm-accent: #d7263d;
-        --wm-accent2: #0077c2;
-        --wm-comment: #7d8b99;
-        --wm-comment2: #a0aab8;
-        --wm-keyword: #d7263d;
-        --wm-string: #b8860b;
-        --wm-function: #b8860b;
-        --wm-variable: #232526;
-        --wm-selection: #dbeafe;
-    }
+  :root {
+    --wm-bg: #f5f7fa;
+    --wm-bg-alt: #e9ecef;
+    --wm-fg: #232526;
+    --wm-accent: #d7263d;
+    --wm-accent2: #0077c2;
+    --wm-comment: #7d8b99;
+    --wm-comment2: #a0aab8;
+    --wm-keyword: #d7263d;
+    --wm-string: #b8860b;
+    --wm-function: #b8860b;
+    --wm-variable: #232526;
+    --wm-selection: #dbeafe;
+  }
 
-    body {
-        background: var(--wm-bg);
-        color: var(--wm-fg);
-    }
+  body {
+    background: var(--wm-bg);
+    color: var(--wm-fg);
+  }
 
-    h1 {
-        color: var(--wm-comment);
-    }
-    h2 {
-        color: var(--wm-comment);
-    }
-    h3, h4, h5, h6 {
-        color: var(--wm-fg);
-    }
+  h1 {
+    color: var(--wm-comment);
+  }
 
-<<<<<<< Updated upstream
-    a {
-        color: var(--wm-accent);
-    }
-    a:hover {
-        color: var(--wm-accent2);
-    }
-=======
+
+  a {
+    color: var(--wm-accent);
+  }
+
+  a:hover {
+    color: var(--wm-accent2);
+  }
+
   h2 {
     color: var(--wm-comment);
   }
->>>>>>> Stashed changes
 
-    pre, code {
-        background: var(--wm-bg-alt);
-        color: var(--wm-fg);
-    }
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--wm-fg);
+  }
 
-    ::selection {
-        background: var(--wm-selection);
-    }
+  a {
+    color: var(--wm-accent);
+  }
 
-    .comment,
-    .token.comment {
-        color: var(--wm-comment);
-    }
+  a:hover {
+    color: var(--wm-accent2);
+  }
 
-    .keyword,
-    .token.keyword {
-        color: var(--wm-keyword);
-    }
+  pre,
+  code {
+    background: var(--wm-bg-alt);
+    color: var(--wm-fg);
+  }
 
-    .string,
-    .token.string {
-        color: var(--wm-string);
-    }
+  ::selection {
+    background: var(--wm-selection);
+  }
 
-    .function,
-    .token.function {
-        color: var(--wm-function);
-    }
+  .comment,
+  .token.comment {
+    color: var(--wm-comment);
+  }
 
-    .variable,
-    .token.variable {
-        color: var(--wm-variable);
-    }
+  .keyword,
+  .token.keyword {
+    color: var(--wm-keyword);
+  }
+
+  .string,
+  .token.string {
+    color: var(--wm-string);
+  }
+
+  .function,
+  .token.function {
+    color: var(--wm-function);
+  }
+
+  .variable,
+  .token.variable {
+    color: var(--wm-variable);
+  }
 }
+
 @media (prefers-color-scheme: dark) {
-    :root {
-        --wm-bg: #1a1c1d;
-        --wm-bg-alt: #232526;
-        --wm-fg: #e6e6e6;
-        --wm-accent: #ff4c29;
-        --wm-accent2: #29b6f6;
-        --wm-comment: #6c7986;
-        --wm-comment2: #5b6875;
-        --wm-keyword: #ff4c29;
-        --wm-string: #ffb400;
-        --wm-function: #ffb400;
-        --wm-variable: #e6e6e6;
-        --wm-selection: #2d3133;
-    }
+  :root {
+    --wm-bg: #1a1c1d;
+    --wm-bg-alt: #232526;
+    --wm-fg: #e6e6e6;
+    --wm-accent: #ff4c29;
+    --wm-accent2: #29b6f6;
+    --wm-comment: #6c7986;
+    --wm-comment2: #5b6875;
+    --wm-keyword: #ff4c29;
+    --wm-string: #ffb400;
+    --wm-function: #ffb400;
+    --wm-variable: #e6e6e6;
+    --wm-selection: #2d3133;
+  }
 
-    body {
-        background: var(--wm-bg);
-        color: var(--wm-fg);
-        font-family: 'Fira Mono', 'Consolas', monospace;
-    }
+  body {
+    background: var(--wm-bg);
+    color: var(--wm-fg);
+    font-family: 'Fira Mono', 'Consolas', monospace;
+  }
 
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: bold;
-    }
-    h1 {
-        color: var(--wm-comment);
-    }
-    h2 {
-        color: var(--wm-comment2);
-    }
-    h3, h4, h5, h6 {
-        color: var(--wm-fg);
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
 
-    a {
-        color: var(--wm-accent);
-        text-decoration: none;
-    }
+  h1 {
+    color: var(--wm-comment);
+  }
 
-    a:hover {
-        color: var(--wm-accent2);
-    }
+  h2 {
+    color: var(--wm-comment2);
+  }
 
-    pre, code {
-        background: var(--wm-bg-alt);
-        color: var(--wm-fg);
-        border-radius: 4px;
-        padding: 0.5em 1em;
-        font-family: inherit;
-    }
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--wm-fg);
+  }
 
-    ::selection {
-        background: var(--wm-selection);
-    }
+  a {
+    color: var(--wm-accent);
+    text-decoration: none;
+  }
 
-    .comment,
-    .token.comment {
-        color: var(--wm-comment);
-        font-style: italic;
-    }
+  a:hover {
+    color: var(--wm-accent2);
+  }
 
-    .keyword,
-    .token.keyword {
-        color: var(--wm-keyword);
-        font-weight: bold;
-    }
+  pre,
+  code {
+    background: var(--wm-bg-alt);
+    color: var(--wm-fg);
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    font-family: inherit;
+  }
 
-    .string,
-    .token.string {
-        color: var(--wm-string);
-    }
+  ::selection {
+    background: var(--wm-selection);
+  }
 
-    .function,
-    .token.function {
-        color: var(--wm-function);
-    }
+  .comment,
+  .token.comment {
+    color: var(--wm-comment);
+    font-style: italic;
+  }
 
-    .variable,
-    .token.variable {
-        color: var(--wm-variable);
-    }
+  .keyword,
+  .token.keyword {
+    color: var(--wm-keyword);
+    font-weight: bold;
+  }
+
+  .string,
+  .token.string {
+    color: var(--wm-string);
+  }
+
+  .function,
+  .token.function {
+    color: var(--wm-function);
+  }
+
+  .variable,
+  .token.variable {
+    color: var(--wm-variable);
+  }
 }
