@@ -1,9 +1,0 @@
-language: ruby
-rvm:
-  - 2.6.3
-install: gem install jekyll && gem install jekyll-sitemap && gem install jekyll-feed && gem install jekyll-inline-svg && gem install s3_website
-branches:
-  only:
-  - main
-script: jekyll build
-after_success: s3_website push
