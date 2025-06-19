@@ -32,12 +32,18 @@ body {
         color: var(--wm-fg);
     }
 
+<<<<<<< Updated upstream
     a {
         color: var(--wm-accent);
     }
     a:hover {
         color: var(--wm-accent2);
     }
+=======
+  h2 {
+    color: var(--wm-comment);
+  }
+>>>>>>> Stashed changes
 
     pre, code {
         background: var(--wm-bg-alt);
